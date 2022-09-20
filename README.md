@@ -6,10 +6,18 @@
 
 https://Rebecca-123.github.io/blog_juiceVRLD/
 
-# My Blog
-
-
+# AP CSA Period 2: Team Juice Vrld
 _powered by [fastpages](https://github.com/fastai/fastpages)_
 
+## [Scrum Board](https://github.com/users/Rebecca-123/projects/2), [Insights](https://github.com/Rebecca-123/blog_juiceVRLD/graphs/contributors)
 
-## Team Roles
+## Contributors
+| Name | GitHub ID and Profile | Roles | Scrum Board | Commits |
+|:-----|:----------------------|:-----:|:-----------:|:-------:|
+| Linda Liu | [@LindaLiu1202](https://github.com/LindaLiu1202) |  |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Achristinlee367)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=christinlee367)|
+| Divyanshi Suri | [@Ritvik-Keerthi](https://github.com/Ritvik-Keerthi) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARitvik-Keerthi) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Aritvik-keerthi)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Ritvik-Keerthi)|
+| Vaishavi Jayashankar | [@3ghin5](https://github.com/3ghin5) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3A3ghin5) |[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3A3ghin5)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=3ghin5)|
+| Rebecca Su | [@Rebecca-123](https://github.com/Rebecca-123) | [Tasks](https://github.com/Rebecca-123/m223_team_lovelace/issues?q=is%3Aissue+assignee%3ARebecca-123)|[Scrum Board](https://github.com/Rebecca-123/m223_team_lovelace/projects/1?card_filter_query=assignee%3Arebecca-123)| [Commits](https://github.com/Rebecca-123/m223_team_lovelace/commits?author=Rebecca-123)|
+
+## Week 5: Design Starters
+### Project Ideation
