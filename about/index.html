@@ -137,17 +137,17 @@ window.onload = wrap_img;
         // tr for each row
         const tr = document.createElement("tr");
         // td for each column
-        const joke = document.createElement("td");
-        const haha = document.createElement("td");
-        const boohoo = document.createElement("td");
+        const name = document.createElement("td");
+        const id = document.createElement("td");
+        const role = document.createElement("td");
         // data is specific to the API
-        joke.innerHTML = row.joke;
-        haha.innerHTML = row.haha; 
-        boohoo.innerHTML = row.boohoo; 
+        name.innerHTML = row.name;
+        id.innerHTML = row.ghID; 
+        role.innerHTML = row.role; 
         // this build td's into tr
-        tr.appendChild(joke);
-        tr.appendChild(haha);
-        tr.appendChild(boohoo);
+        tr.appendChild(name);
+        tr.appendChild(id);
+        tr.appendChild(role);
         // add HTML to container
         resultContainer.appendChild(tr);
     }
