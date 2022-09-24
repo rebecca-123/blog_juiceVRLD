@@ -36,11 +36,6 @@ url: "https://Rebecca-123.github.io" # the base hostname & protocol for your sit
 #
 baseurl: "/blog_juiceVRLD" # the subpath of your site, e.g. "/blog".
 
-# Github and twitter are optional:
-minima:
-  social_links:
-    github: Rebecca-123/blog_juiceVRLD
-
 # Set this to true to get LaTeX math equation support
 use_math: 
 
