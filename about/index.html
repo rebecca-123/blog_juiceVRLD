@@ -4,18 +4,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="twitter:card" content="summary_large_image" /><!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>About Me | Team Juice Vrld</title>
+<title>About Us | Team Juice Vrld</title>
 <meta name="generator" content="Jekyll v4.1.1" />
-<meta property="og:title" content="About Me" />
+<meta property="og:title" content="About Us" />
 <meta property="og:locale" content="en_US" />
 <link rel="canonical" href="https://rebecca-123.github.io/blog_juiceVRLD/about/" />
 <meta property="og:url" content="https://rebecca-123.github.io/blog_juiceVRLD/about/" />
 <meta property="og:site_name" content="Team Juice Vrld" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="About Me" />
+<meta property="twitter:title" content="About Us" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","headline":"About Me","name":"Team Juice Vrld","url":"https://rebecca-123.github.io/blog_juiceVRLD/about/"}</script>
+{"@context":"https://schema.org","@type":"WebSite","headline":"About Us","name":"Team Juice Vrld","url":"https://rebecca-123.github.io/blog_juiceVRLD/about/"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/blog_juiceVRLD/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://rebecca-123.github.io/blog_juiceVRLD/feed.xml" title="Team Juice Vrld" /><link rel="shortcut icon" type="image/x-icon" href="/blog_juiceVRLD/images/favicon.ico"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/15.2.0/primer.css" integrity="sha512-xTz2ys4coGAOz8vuV1NcQBkgVmKhsSEtjbqyMJbBHRplFuvKIUo6xhLHpAyPt9mfR6twHJgn9OgVLuqOvjeBhg==" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -62,7 +62,7 @@ window.onload = wrap_img;
           </span>
         </label>
 
-        <div class="trigger"><a class="page-link" href="/blog_juiceVRLD/about/">About Me</a><a class="page-link" href="/blog_juiceVRLD/search/">Search</a><a class="page-link" href="/blog_juiceVRLD/categories/">Tags</a></div>
+        <div class="trigger"><a class="page-link" href="/blog_juiceVRLD/about/">About Us</a><a class="page-link" href="/blog_juiceVRLD/search/">Search</a><a class="page-link" href="/blog_juiceVRLD/categories/">Tags</a></div>
       </nav></div>
 </header>
 <main class="page-content" aria-label="Content">
@@ -70,7 +70,7 @@ window.onload = wrap_img;
         <article class="post">
 
   <header class="post-header">
-    <h1 class="post-title">About Me</h1>
+    <h1 class="post-title">About Us</h1>
   </header>
 
   <div class="post-content">
@@ -79,12 +79,85 @@ window.onload = wrap_img;
 <h2 id="scrum-board-insights"><a href="https://github.com/users/Rebecca-123/projects/2">Scrum Board</a>, <a href="https://github.com/Rebecca-123/blog_juiceVRLD/graphs/contributors">Insights</a></h2>
 
 <h2 id="contributors">Contributors</h2>
-<p>| Name | GitHub ID and Profile | Roles | Tasks |
-|:—–|:———————-|:—–:|:———–:|
-| Linda Liu | <a href="https://github.com/LindaLiu1202">@LindaLiu1202</a> | DevOps | <a href="https://github.com/Rebecca-123/blog_juiceVRLD/issues?q=is%3Aissue+assignee%3ALindaLiu1202">Tasks</a>| 
-| Divyanshi Suri | <a href="https://github.com/divyanshisuri">@divyanshisuri</a> | Frontend Developer |<a href="https://github.com/Rebecca-123/blog_juiceVRLD/issues?q=is%3Aissue+assignee%3Adivyanshisuri">Tasks</a> 
-| Vaishavi Jayashankar | <a href="https://github.com/vaishavijay">@vaishavijay</a> | Backend Developer | <a href="https://github.com/Rebecca-123/blog_juiceVRLD/issues?q=is%3Aissue+assignee%3Avaishavijay">Tasks</a> |
-| Rebecca Su | <a href="https://github.com/Rebecca-123">@Rebecca-123</a> | Scrum Master | <a href="https://github.com/Rebecca-123/blog_juiceVRLD/issues?q=is%3Aissue+assignee%3ARebecca-123">Tasks</a>|</p>
+
+<script>
+    // define a function to hold data for each team member
+    function Student(name, ghID, role) {
+        this.name = name;
+        this.ghID = ghID;
+        this.role = role;
+    }
+
+    // define a JSON conversion "method" associated with Student
+    Student.prototype.toJSON = function() {
+        const obj = {name: this.name, ghID: this.ghID, role: this.role};
+        const json = JSON.stringify(obj);  // json/string is useful when passing data on internet
+        return json;
+    }
+
+    // define array of students
+    var team = [ 
+        new Student("Divyanshi Suri", "@divyanshisuri", "Frontend Developer"),
+        new Student("Linda Liu", "@LindaLiu1202", "DevOps"),
+        new Student("Rebecca Su", "@Rebecca-123", "Scrum Master"),
+        new Student("Vaishavi Jayashankar", "@vaishavijay", "Backend Developer")
+    ];
+  
+    // define a classroom and build Classroom objects and json
+    function Classroom(students){
+        // add each Student to Classroom
+        this.classroom = students;
+        // build json/string format of Classroom
+        this.json = [];
+        this.classroom.forEach(student => this.json.push(student.toJSON()));
+    }
+  
+    // make a CompSci classroom
+    compsci = new Classroom(team);
+    
+    // define an HTML conversion "method" associated with Classroom
+    Classroom.prototype._toHtml = function() {
+        // HTML Style is build using inline structure
+        var style = (
+        "display:inline-block;" +
+        "border: 2px solid grey;" +
+        "box-shadow: 0.8em 0.4em 0.4em grey;"
+        );
+    
+        // HTML Body of Table is build as a series of concatenations (+=)
+        var body = "";
+        // Heading for Array Columns
+        body += "<tr>";
+        body += "<th><mark>" + "Name" + "</mark></th>";
+        body += "<th><mark>" + "GitHub ID" + "</mark></th>";
+        body += "<th><mark>" + "Role" + "</mark></th>";
+        body += "</tr>";
+        // Data of Array, iterate through each row of compsci.classroom 
+        for (var row in compsci.classroom) {
+        // tr for each row, a new line
+        body += "<tr>";
+        // td for each column of data
+        body += "<td>" + compsci.classroom[row].name + "</td>";
+        body += "<td>" + compsci.classroom[row].ghID + "</td>";
+        body += "<td>" + compsci.classroom[row].role + "</td>";
+        // tr to end line
+        body += "<tr>";
+        }
+    
+        // Build and HTML fragment of div, table, table body
+        return (
+        "<div style='" + style + "'>" +
+            "<table>" +
+            body +
+            "</table>" +
+        "</div>"
+        );
+    
+    };
+    
+    // IJavaScript HTML processor receive parameter of defined HTML fragment
+    $$.html(compsci._toHtml());
+</script>
 
 
   </div>
