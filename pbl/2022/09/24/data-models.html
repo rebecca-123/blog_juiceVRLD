@@ -99,6 +99,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#data-modeling-for-travel-website">Data Modeling for Travel Website</a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#packing-list">Packing List</a></li>
+<li class="toc-entry toc-h2"><a href="#itinerary">Itinerary</a></li>
 </ul>
 </li>
 </ul><h1 id="data-modeling-for-travel-website">
@@ -111,9 +112,9 @@ window.onload = wrap_img;
   <thead>
   <tr>
     <th>Label</th>
-    <!-- <th>#</th> -->
+    <th>#</th>
     <th>Item</th>
-    <!-- <th>Packed?</th> -->
+    <th>Packed?</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -153,26 +154,43 @@ function Luggage(stuffs){
 // make a 
 myLuggage = new Luggage(stuffs);
 
+var i = 0;
 for (const row of myLuggage.luggage) {
     // tr for each row
     const tr = document.createElement("tr");
     // td for each column
     const label = document.createElement("td");
+    const num = document.creatElement("td");
     const item = document.createElement("td");
+    const packed = document.createElement("td");
     
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
+    num.innerHTML = i;
+    packed.innerHTML = <input type="checkbox">
   
     // this build td's into tr
     tr.appendChild(label);
+    tr.appendChild(num);
     tr.appendChild(item);
+    tr.appendChild(packed);
 
     // add HTML to container
     resultContainer.appendChild(tr);
+
+    i++;
 }
+
 </script>
 
+<ul>
+  <li>Would need added functionality of a database (adding/removing/editing rows)</li>
+</ul>
+
+<h2 id="itinerary">
+<a class="anchor" href="#itinerary" aria-hidden="true"><span class="octicon octicon-link"></span></a>Itinerary</h2>
+<p>Retains same concept as above but with different column names.</p>
 
   </div><a class="u-url" href="/blog_juiceVRLD/pbl/2022/09/24/data-models.html" hidden></a>
 </article>
