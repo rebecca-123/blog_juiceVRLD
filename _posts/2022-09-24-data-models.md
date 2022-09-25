@@ -71,7 +71,7 @@ for (const row of myLuggage.luggage) {
 
     var x = document.createElement("INPUT");
     x.setAttribute("type", "checkbox");
-    packed.appendChild(x);
+    packed.innerHTML = x;
   
     // this build td's into tr
     tr.appendChild(label);
