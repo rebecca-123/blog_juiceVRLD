@@ -9,6 +9,16 @@ title: Data Modeling for Travel Website
 
 ![]({{site.baseurl}}/images/uml.png)
 
+## Currency Converter
+If using Spring and Thymeleaf,<br>
+1. User selects currency conversion (from USD or to USD...)
+2. User provides values to convert
+3. Java method will execute mathematical conversion
+4. Converted value will be returned and displayed
+
+- HTML form
+- Java class and method
+
 ## Packing List
 <!-- HTML table fragment for page -->
 <table>
