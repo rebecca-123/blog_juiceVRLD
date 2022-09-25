@@ -13,9 +13,9 @@ title: Data Modeling for Travel Website
   <thead>
   <tr>
     <th>Label</th>
-    <!-- <th>#</th> -->
+    <th>#</th>
     <th>Item</th>
-    <!-- <th>Packed?</th> -->
+    <th>Packed?</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -55,22 +55,36 @@ function Luggage(stuffs){
 // make a 
 myLuggage = new Luggage(stuffs);
 
+var i = 0;
 for (const row of myLuggage.luggage) {
     // tr for each row
     const tr = document.createElement("tr");
     // td for each column
     const label = document.createElement("td");
+    const num = document.creatElement("td");
     const item = document.createElement("td");
+    const packed = document.createElement("td");
     
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
+    num.innerHTML = i;
+    packed.innerHTML = <input type="checkbox">
   
     // this build td's into tr
     tr.appendChild(label);
+    tr.appendChild(num);
     tr.appendChild(item);
+    tr.appendChild(packed);
 
     // add HTML to container
     resultContainer.appendChild(tr);
+
+    i++;
 }
+
 </script>
+- Would need added functionality of a database (adding/removing/editing rows)
+
+## Itinerary
+Retains same concept as above but with different column names.
