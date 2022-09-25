@@ -165,10 +165,7 @@ for (const row of myLuggage.luggage) {
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
-
-    var x = document.createElement("input");
-    x.setAttribute("type", "checkbox");
-    packed.appendChild(x);
+    packed.innerHTML += "<input type="checkbox">";
   
     // this build td's into tr
     tr.appendChild(label);
