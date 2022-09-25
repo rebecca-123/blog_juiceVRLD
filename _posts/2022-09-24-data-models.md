@@ -45,7 +45,14 @@ var stuffs = [
     new Stuff("Clothing", "Jacket"),
     new Stuff("Clothing", "Socks"),
     new Stuff("Identification", "Passport"),
+    new Stuff("Identification", "Drivers License"),
     new Stuff("Other", "Umbrella"),
+    new Stuff("Other", "Hand Sanitizer"),
+    new Stuff("Other", "First Aid Kit"),
+    new Stuff("Other", "Sunscreen"),
+    new Stuff("Technology", "Power Bank"),
+    new Stuff("Technology", "Phone Charging Cord"),
+    new Stuff("Technology", "Laptop"),
 ];
 
 function Luggage(stuffs){
@@ -69,8 +76,12 @@ for (const row of myLuggage.luggage) {
     
     // data is specific to the API
     label.innerHTML = row.label;
+
+    // number items in table
     num.innerHTML = myLuggage.luggage.indexOf(row) + 1;
     item.innerHTML = row.item; 
+
+    // checkboxes
     packed.innerHTML += '<input type="checkbox">';
   
     // this build td's into tr
