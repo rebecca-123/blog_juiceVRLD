@@ -3,7 +3,7 @@
     
         "post0": {
             "title": "Data Modeling for Travel Website",
-            "content": "Data Modeling for Travel Website . Packing List . Label # Item Packed? . Would need added functionality of a database (adding/removing/editing rows) | . Itinerary . Retains same concept as above but with different column names. .",
+            "content": "Data Modeling for Travel Website . . Packing List . Label # Item Packed? . Would need added functionality of a database (adding/removing/editing rows) | . Itinerary . Retains same concept as above but with different column names. .",
             "url": "https://rebecca-123.github.io/blog_juiceVRLD/pbl/2022/09/24/data-models.html",
             "relUrl": "/pbl/2022/09/24/data-models.html",
             "date": " • Sep 24, 2022"
@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Week 5: Team Design Starters",
-            "content": "Team Brainwrite . Project Ideas . After-school organization tool . | Travel website . | Website Purpose . Travel web application providing users with a tool to organize travel plans and prepare for their next adventure. . Website Ideas . Authentication | Users can sign up and log in to access personal itineraries, packing lists... etc | . Search capabilities | Over entire website | Searching itinerary database | . Currency converter | Map | Notifications (possibly for change in flight data) | APIs . Flight Data | Link to Possible API to Use | . Weather API | Translator API | Databases . Itinerary | Table where users can add travel plans . | More complex idea: allow sharing/collaboration on itinerary plans (across user accounts) . | . Packing list | Wireframe . Backend/UML/Data .",
+            "content": "Team Brainwrite . Project Ideas . After-school organization tool . | Travel website . | Website Purpose . Travel web application providing users with a tool to organize travel plans and prepare for their next adventure. . Website Ideas . Authentication | Users can sign up and log in to access personal itineraries, packing lists... etc | . Search capabilities | Over entire website | Searching itinerary database | . Currency converter | Map | Notifications (possibly for change in flight data) | APIs . Flight Data | Link to Possible API to Use | . Weather API | Translator API | Databases . Itinerary | Table where users can add travel plans . | More complex idea: allow sharing/collaboration on itinerary plans (across user accounts) . | . Packing list | Wireframe . Backend/UML/Data . Currency Converter . If using Spring and Thymeleaf, . User selects currency conversion (from USD or to USD...) | User provides values to convert | Java method will execute mathematical conversion | Converted value will be returned and displayed | HTML form | Java class and method | .",
             "url": "https://rebecca-123.github.io/blog_juiceVRLD/pbl/2022/09/23/brainwrite.html",
             "relUrl": "/pbl/2022/09/23/brainwrite.html",
             "date": " • Sep 23, 2022"
