@@ -55,7 +55,6 @@ function Luggage(stuffs){
 // make a 
 myLuggage = new Luggage(stuffs);
 
-var i = 0;
 for (const row of myLuggage.luggage) {
     // tr for each row
     const tr = document.createElement("tr");
@@ -68,7 +67,7 @@ for (const row of myLuggage.luggage) {
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
-    num.innerHTML = i;
+    num.innerHTML = tr.rowIndex;
 
     var x = document.createElement("INPUT");
     x.setAttribute("type", "checkbox");
@@ -82,8 +81,6 @@ for (const row of myLuggage.luggage) {
 
     // add HTML to container
     resultContainer.appendChild(tr);
-
-    i++;
 }
 
 </script>
