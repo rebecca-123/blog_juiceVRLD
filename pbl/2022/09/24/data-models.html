@@ -168,7 +168,10 @@ for (const row of myLuggage.luggage) {
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
     num.innerHTML = i;
-    packed.innerHTML = <input type="checkbox">
+
+    var x = document.createElement("INPUT");
+    x.setAttribute("type", "checkbox");
+    packed.appendChild(x);
   
     // this build td's into tr
     tr.appendChild(label);
