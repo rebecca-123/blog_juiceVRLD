@@ -13,7 +13,6 @@ title: Data Modeling for Travel Website
   <thead>
   <tr>
     <th>Label</th>
-    <th>#</th>
     <th>Item</th>
     <th>Packed?</th>
   </tr>
@@ -67,15 +66,13 @@ for (const row of myLuggage.luggage) {
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
-    num.innerHTML = myLuggage.luggage.indexOf(row);
 
-    var x = document.createElement("INPUT");
+    var x = document.createElement("input");
     x.setAttribute("type", "checkbox");
     packed.appendChild(x);
   
     // this build td's into tr
     tr.appendChild(label);
-    tr.appendChild(num);
     tr.appendChild(item);
     tr.appendChild(packed);
 
