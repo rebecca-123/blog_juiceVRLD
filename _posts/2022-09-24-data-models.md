@@ -67,7 +67,7 @@ for (const row of myLuggage.luggage) {
     // data is specific to the API
     label.innerHTML = row.label;
     item.innerHTML = row.item; 
-    num.innerHTML = tr.rowIndex;
+    num.innerHTML = myLuggage.luggage.indexOf(row);
 
     var x = document.createElement("INPUT");
     x.setAttribute("type", "checkbox");
