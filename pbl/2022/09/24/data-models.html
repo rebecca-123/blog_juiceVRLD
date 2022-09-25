@@ -142,6 +142,9 @@ Stuff.prototype.toJSON = function() {
 // define array of students
 var stuffs = [ 
     new Stuff("Clothing", "Jacket"),
+    new Stuff("Clothing", "Socks"),
+    new Stuff("Identification", "Passport"),
+    new Stuff("Other", "Umbrella"),
 ];
 
 function Luggage(stuffs){
@@ -165,7 +168,7 @@ for (const row of myLuggage.luggage) {
     
     // data is specific to the API
     label.innerHTML = row.label;
-    num.innerHTML = myLuggage.luggage.indexOf(row);
+    num.innerHTML = myLuggage.luggage.indexOf(row) + 1;
     item.innerHTML = row.item; 
     packed.innerHTML += '<input type="checkbox">';
   
