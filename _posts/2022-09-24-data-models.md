@@ -7,6 +7,8 @@ title: Data Modeling for Travel Website
 ---
 # Data Modeling for Travel Website
 
+![]({{site.baseurl}}/images/uml.png)
+
 ## Packing List
 <!-- HTML table fragment for page -->
 <table>
