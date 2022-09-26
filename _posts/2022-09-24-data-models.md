@@ -7,6 +7,8 @@ title: Data Modeling for Travel Website
 ---
 # Data Modeling for Travel Website
 
+![]({{site.baseurl}}/images/uml.png)
+
 ## Currency Converter
 If using Spring and Thymeleaf,<br>
 1. User selects currency conversion (from USD or to USD...)
@@ -16,6 +18,12 @@ If using Spring and Thymeleaf,<br>
 
 - HTML form
 - Java class and method
+
+![]({{site.baseurl}}/images/currency.png)
+
+## APIs
+
+![]({{site.baseurl}}/images/api.png)
 
 ## Packing List
 <!-- HTML table fragment for page -->
