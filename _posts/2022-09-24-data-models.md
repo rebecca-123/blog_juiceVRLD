@@ -7,7 +7,7 @@ title: Data Modeling for Travel Website
 ---
 # Data Modeling for Travel Website
 
-![]({{site.baseurl}}/images/uml.png)
+![]({{site.baseurl}}/images/UML.png)
 
 ## Currency Converter
 If using Spring and Thymeleaf,<br>
