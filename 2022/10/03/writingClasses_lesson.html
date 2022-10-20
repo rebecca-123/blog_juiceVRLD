@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      5 min read
+      6 min read
     
 </span></p>
 
@@ -140,7 +140,7 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h2"><a href="#Other-Vocab">Other Vocab </a></li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#5.4-Accessor-Method">5.4 Accessor Method </a>
+<li class="toc-entry toc-h1"><a href="#5.4-Accessor-Method-(Getters)">5.4 Accessor Method (Getters) </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#toString()-Method">toString() Method </a>
 <ul>
@@ -149,7 +149,7 @@ window.onload = wrap_img;
 </li>
 </ul>
 </li>
-<li class="toc-entry toc-h1"><a href="#5.5-Mutator-Method">5.5 Mutator Method </a>
+<li class="toc-entry toc-h1"><a href="#5.5-Mutator-Method-(Modifier/Setter)">5.5 Mutator Method (Modifier/Setter) </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
 </ul>
@@ -754,8 +754,8 @@ Using Two Constructor: Oreos
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.4-Accessor-Method">
-<a class="anchor" href="#5.4-Accessor-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.4 Accessor Method<a class="anchor-link" href="#5.4-Accessor-Method"> </a>
+<h1 id="5.4-Accessor-Method-(Getters)">
+<a class="anchor" href="#5.4-Accessor-Method-(Getters)" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.4 Accessor Method (Getters)<a class="anchor-link" href="#5.4-Accessor-Method-(Getters)"> </a>
 </h1>
 </div>
 </div>
@@ -763,9 +763,86 @@ Using Two Constructor: Oreos
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<ul>
+<li>Allows other objects outside of the class to obtain values of instance variables or static variables</li>
+<li>Non-void method returns a single value<ul>
+<li>Header includes return type (<code>String</code>, <code>int</code>, <code>Long</code> etc)</li>
+</ul>
+</li>
+<li>"return by value": return expression at the end of a method will specify that value that will be returned (must correspond to the type)</li>
+<li>Must be used when different classes need to access the instance variables</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// always public</span>
+<span class="c1">// must specify return type</span>
+<span class="c1">// getVariable (typical naming convention)</span>
+<span class="c1">// no parameters</span>
+
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">getVariable</span><span class="p">(){</span>
+
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="toString()-Method">
 <a class="anchor" href="#toString()-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>toString()</code> Method<a class="anchor-link" href="#toString()-Method"> </a>
 </h2>
+<ul>
+<li>Overridden method that provides description of a specific object (ie values of instance variables)</li>
+<li>If System.out.print or System.out.println() is passed an object, that object's toString() method is called ==&gt; returned string is printed<ul>
+<li>Java default toString() will return a hashcode, but you can manually write your own toString() method</li>
+</ul>
+</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// method header always stays the same</span>
+<span class="c1">// always returns string</span>
+<span class="c1">// no parameters</span>
+
+<span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
+
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Example">
 <a class="anchor" href="#Example" aria-hidden="true"><span class="octicon octicon-link"></span></a>Example<a class="anchor-link" href="#Example"> </a>
 </h3>
@@ -827,12 +904,44 @@ Using Two Constructor: Oreos
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="5.5-Mutator-Method">
-<a class="anchor" href="#5.5-Mutator-Method" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.5 Mutator Method<a class="anchor-link" href="#5.5-Mutator-Method"> </a>
+<h1 id="5.5-Mutator-Method-(Modifier/Setter)">
+<a class="anchor" href="#5.5-Mutator-Method-(Modifier/Setter)" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.5 Mutator Method (Modifier/Setter)<a class="anchor-link" href="#5.5-Mutator-Method-(Modifier/Setter)"> </a>
 </h1>
+<ul>
+<li>Typically a <code>void</code> method that changes value of instance variables or static variables<ul>
+<li>
+<code>void</code> methods do not return values</li>
+</ul>
+</li>
+<li>Must be used when different classes need to modify instance variables    </li>
+</ul>
+
 </div>
 </div>
 </div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="c1">// always public void</span>
+<span class="c1">// setVariable (naming convention)</span>
+<span class="c1">// parameter type must match type of instance variable being modified</span>
+
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">setVariable</span><span class="p">(</span><span class="n">String</span> <span class="n">variable</span><span class="p">){</span>
+    <span class="k">this</span><span class="p">.</span><span class="na">variable</span> <span class="o">=</span> <span class="n">variable</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+    
+
 <div class="cell border-box-sizing text_cell rendered">
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -864,8 +973,8 @@ Using Two Constructor: Oreos
 <a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
 </h2>
 <ul>
-<li>add verse three with the rhyme “knee” to The Old Man Song</li>
-<li>add verse four with the rhyme "door"</li>
+<li>Add verse three with the rhyme “knee” to The Old Man Song</li>
+<li>Add verse four with the rhyme "door"</li>
 </ul>
 
 </div>
