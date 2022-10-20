@@ -142,6 +142,7 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#5.4-5.5">5.4-5.5 </a>
 <ul>
+<li class="toc-entry toc-h2"><a href="#toString()-Method-Example">toString() Method Example </a></li>
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
 </ul>
 </li>
@@ -743,6 +744,73 @@ Using Two Constructor: Oreos
 <h1 id="5.4-5.5">
 <a class="anchor" href="#5.4-5.5" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.4-5.5<a class="anchor-link" href="#5.4-5.5"> </a>
 </h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="toString()-Method-Example">
+<a class="anchor" href="#toString()-Method-Example" aria-hidden="true"><span class="octicon octicon-link"></span></a><code>toString()</code> Method Example<a class="anchor-link" href="#toString()-Method-Example"> </a>
+</h2>
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Snack</span> <span class="p">{</span>
+
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="p">;</span>
+    <span class="kd">private</span> <span class="kt">int</span> <span class="n">calories</span><span class="p">;</span>
+
+    <span class="kd">public</span> <span class="nf">Snack</span><span class="p">(</span><span class="n">String</span> <span class="n">n</span><span class="p">,</span> <span class="kt">int</span> <span class="n">c</span><span class="p">){</span>
+        <span class="n">name</span> <span class="o">=</span> <span class="n">n</span><span class="p">;</span>
+        <span class="n">calories</span> <span class="o">=</span> <span class="n">c</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="c1">// return values of instance variables</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="p">(){</span>
+        <span class="k">return</span> <span class="s">"Name: "</span> <span class="o">+</span> <span class="n">name</span> <span class="o">+</span> <span class="s">"; "</span> <span class="o">+</span> <span class="s">"Calories: "</span> <span class="o">+</span> <span class="n">calories</span><span class="p">;</span>
+    <span class="p">}</span>
+    
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">Snack</span> <span class="n">two</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Snack</span><span class="p">(</span><span class="s">"Oreos"</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">two</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Snack</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Name: Oreos; Calories: 100
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Hack-3">
 <a class="anchor" href="#Hack-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 3<a class="anchor-link" href="#Hack-3"> </a>
 </h2>
