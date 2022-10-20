@@ -77,7 +77,7 @@ window.onload = wrap_img;
        • <span class="read-time" title="Estimated read time">
     
     
-      4 min read
+      5 min read
     
 </span></p>
 
@@ -152,6 +152,11 @@ window.onload = wrap_img;
 <li class="toc-entry toc-h1"><a href="#5.5-Mutator-Method">5.5 Mutator Method </a>
 <ul>
 <li class="toc-entry toc-h2"><a href="#Hack-3">Hack 3 </a></li>
+</ul>
+</li>
+<li class="toc-entry toc-h1"><a href="#5.6-Writing-Methods">5.6 Writing Methods </a>
+<ul>
+<li class="toc-entry toc-h2"><a href="#Hack-4">Hack 4 </a></li>
 </ul>
 </li>
 </ul><!--
@@ -843,6 +848,97 @@ Using Two Constructor: Oreos
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="5.6-Writing-Methods">
+<a class="anchor" href="#5.6-Writing-Methods" aria-hidden="true"><span class="octicon octicon-link"></span></a>5.6 Writing Methods<a class="anchor-link" href="#5.6-Writing-Methods"> </a>
+</h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Hack-4">
+<a class="anchor" href="#Hack-4" aria-hidden="true"><span class="octicon octicon-link"></span></a>Hack 4<a class="anchor-link" href="#Hack-4"> </a>
+</h2>
+<ul>
+<li>add verse three with the rhyme “knee” to The Old Man Song</li>
+<li>add verse four with the rhyme "door"</li>
+</ul>
+
+</div>
+</div>
+</div>
+    
+    
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-java"><pre><span></span><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Song</span>
+<span class="p">{</span>
+
+  <span class="cm">/** Verse - prints out a verse of the song</span>
+<span class="cm">   * @param number - a String like "one", "two", etc.</span>
+<span class="cm">   * @param rhyme - a String like "thumb", "shoe", etc.</span>
+<span class="cm">   */</span>
+   <span class="kd">public</span> <span class="kt">void</span> <span class="nf">verse</span><span class="p">(</span><span class="n">String</span> <span class="n">number</span><span class="p">,</span> <span class="n">String</span> <span class="n">rhyme</span><span class="p">)</span>
+   <span class="p">{</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"This old man, he played "</span> <span class="o">+</span> <span class="n">number</span><span class="p">);</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"He played knick knack on my "</span> <span class="o">+</span> <span class="n">rhyme</span><span class="p">);</span>
+   <span class="p">}</span>
+
+  <span class="c1">// The chorus method</span>
+  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">chorus</span><span class="p">()</span>
+  <span class="p">{</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"With a knick knack paddy whack, give a dog a bone."</span><span class="p">);</span>
+     <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">"This old man came rolling home."</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span> <span class="n">args</span><span class="o">[]</span><span class="p">)</span>
+  <span class="p">{</span>
+      <span class="n">Song</span> <span class="n">mySong</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Song</span><span class="p">();</span>
+      <span class="n">mySong</span><span class="p">.</span><span class="na">verse</span><span class="p">(</span><span class="s">"one"</span><span class="p">,</span> <span class="s">"thumb"</span><span class="p">);</span>
+      <span class="n">mySong</span><span class="p">.</span><span class="na">chorus</span><span class="p">();</span>
+      <span class="n">mySong</span><span class="p">.</span><span class="na">verse</span><span class="p">(</span><span class="s">"two"</span><span class="p">,</span> <span class="s">"shoe"</span><span class="p">);</span>
+      <span class="n">mySong</span><span class="p">.</span><span class="na">chorus</span><span class="p">();</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="n">Song</span><span class="p">.</span><span class="na">main</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+<div class="output_area">
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>This old man, he played one
+He played knick knack on my thumb
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+This old man, he played two
+He played knick knack on my shoe
+With a knick knack paddy whack, give a dog a bone.
+This old man came rolling home.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+    
+
 </div>
 
 
