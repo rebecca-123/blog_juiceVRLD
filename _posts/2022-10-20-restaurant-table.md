@@ -28,8 +28,8 @@ title: Restaurant Preferences
   const resultContainer = document.getElementById("result");
 
   // keys for joke reactions
-  const HAHA = "haha";
-  const BOOHOO = "boohoo";
+  const HAHA = "delicious";
+  const BOOHOO = "inedible";
 
   // prepare fetch urls
   const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants";
