@@ -32,7 +32,7 @@ title: Restaurant Preferences
   const BOOHOO = "boohoo";
 
   // prepare fetch urls
-  const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants/";
+  const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants";
   const get_url = url +"/";
   const like_url = url + "/like/";  // haha reaction
   const jeer_url = url + "/jeer/";  // boohoo reaction
