@@ -11,9 +11,9 @@ title: Restaurant Preferences
 <table>
   <thead>
   <tr>
-    <th>Joke</th>
-    <th>HaHa</th>
-    <th>Boohoo</th>
+    <th>Restaurant</th>
+    <th>Delicious</th>
+    <th>Inedible</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -28,14 +28,14 @@ title: Restaurant Preferences
   const resultContainer = document.getElementById("result");
 
   // keys for joke reactions
-  const HAHA = "delicious";
-  const BOOHOO = "inedible";
+  const DELI = "delicious";
+  const INED = "inedible";
 
   // prepare fetch urls
-  const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants";
+  const url = "https://juicevrld.nighthawkcoding.ml";
   const get_url = url +"/";
-  const like_url = url + "/like/";  // haha reaction
-  const jeer_url = url + "/jeer/";  // boohoo reaction
+  const like_url = url + "/like/";  // delicious reaction
+  const jeer_url = url + "/jeer/";  //  reactinedibleion
 
   // prepare fetch GET options
   const options = {
@@ -74,22 +74,22 @@ title: Restaurant Preferences
             // td for haha cell with onclick actions
             const haha = document.createElement("td");
               const haha_but = document.createElement('button');
-              haha_but.id = HAHA+row.id   // establishes a HAHA JS id for cell
+              haha_but.id = DELI+row.id   // establishes a HAHA JS id for cell
               haha_but.innerHTML = row.delicious;  // add fetched "haha count" to innerHTML
               haha_but.onclick = function () {
                 // onclick function call with "like parameters"
-                reaction(HAHA, like_url+row.id, haha_but.id);  
+                reaction(DELI, like_url+row.id, haha_but.id);  
               };
               haha.appendChild(haha_but);  // add "haha button" to haha cell
 
             // td for boohoo cell with onclick actions
             const boohoo = document.createElement("td");
               const boohoo_but = document.createElement('button');
-              boohoo_but.id = BOOHOO+row.id  // establishes a BOOHOO JS id for cell
+              boohoo_but.id = INED+row.id  // establishes a BOOHOO JS id for cell
               boohoo_but.innerHTML = row.inedible;  // add fetched "boohoo count" to innerHTML
               boohoo_but.onclick = function () {
                 // onclick function call with "jeer parameters"
-                reaction(BOOHOO, jeer_url+row.id, boohoo_but.id);  
+                reaction(INED, jeer_url+row.id, boohoo_but.id);  
               };
               boohoo.appendChild(boohoo_but);  // add "boohoo button" to boohoo cell
              
@@ -124,9 +124,9 @@ title: Restaurant Preferences
       response.json().then(data => {
           console.log(data);
           // Likes or Jeers updated/incremented
-          if (type === HAHA) // like data element
+          if (type === DELI) // like data element
             document.getElementById(elemID).innerHTML = data.delicious;  // fetched haha data assigned to haha Document Object Model (DOM)
-          else if (type === BOOHOO) // jeer data element
+          else if (type === INED) // jeer data element
             document.getElementById(elemID).innerHTML = data.inedible;  // fetched boohoo data assigned to boohoo Document Object Model (DOM)
           else
             error("unknown type: " + type);  // should never occur
