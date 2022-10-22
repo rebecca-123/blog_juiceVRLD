@@ -32,7 +32,7 @@ title: Restaurant Preferences
   const INED = "inedible";
 
   // prepare fetch urls
-  const url = "https://juicevrld.nighthawkcoding.ml";
+  const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants";
   const get_url = url +"/";
   const like_url = url + "/like/";  // delicious reaction
   const jeer_url = url + "/jeer/";  //  reactinedibleion
