@@ -2,7 +2,7 @@
 toc: true
 layout: post
 description: A frontend data display for restaurant API.
-categories: []
+categories: [pbl]
 title: Restaurant Preferences
 ---
 # Restaurant Preferences
