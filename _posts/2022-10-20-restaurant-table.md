@@ -5,8 +5,6 @@ description: A frontend data display for restaurant API.
 categories: [pbl]
 title: Restaurant Preferences
 ---
-# Restaurant Preferences
-
 <!-- HTML table fragment for page -->
 <table>
   <thead>
