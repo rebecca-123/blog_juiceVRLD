@@ -30,7 +30,7 @@ title: Hollywood Weather Forecast
   const resultContainer = document.getElementById("result");
 
   // prepare fetch urls
-  const url = "https://juicevrld.nighthawkcoding.ml/starters/weather/daily";
+  const get_url = "https://juicevrld.nighthawkcoding.ml/starters/weather/daily";
 
   // prepare fetch GET options
   const options = {
