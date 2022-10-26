@@ -81,6 +81,11 @@ title: Hollywood Weather Forecast
              
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(time);
+            tr.appendChild(temp);
+            tr.appendChild(description);
+            tr.appendChild(precip);
+            tr.appendChild(snow);
+            tr.appendChild(uv);
 
             // this adds all the tr (row) work above to the HTML "result" container
             resultContainer.appendChild(tr);
