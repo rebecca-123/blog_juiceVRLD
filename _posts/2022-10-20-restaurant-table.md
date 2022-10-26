@@ -3,7 +3,7 @@ toc: true
 layout: post
 description: A frontend data display (via JS fetch) for restaurant API (made with BE POJO and JPA).
 categories: [pbl]
-title: Restaurant Preferences
+title: San Diego Fast Food Preferences
 ---
 <!-- HTML table fragment for page -->
 <table>
