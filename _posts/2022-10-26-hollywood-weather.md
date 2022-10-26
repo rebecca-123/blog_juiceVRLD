@@ -15,7 +15,7 @@ title: Hollywood Weather Forecast
     <th>Description</th>
     <th>Precipitation</th>
     <th>Snow</th>
-    <th>UV<th>
+    <th>UV</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -88,5 +88,4 @@ title: Hollywood Weather Forecast
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   }
-
 </script>
