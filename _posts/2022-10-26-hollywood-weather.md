@@ -24,7 +24,7 @@ title: Hollywood Weather Forecast
 </table>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
-<script>
+<!-- <script>
 
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
@@ -88,4 +88,4 @@ title: Hollywood Weather Forecast
     tr.appendChild(td);
     resultContainer.appendChild(tr);
   }
-</script>
+</script> -->
