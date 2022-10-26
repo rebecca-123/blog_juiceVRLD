@@ -60,12 +60,27 @@ title: Hollywood Weather Forecast
             // make "tr element" for each "row of data"
             const tr = document.createElement("tr");
             
-            // td for joke cell
-            const joke = document.createElement("td");
-              joke.innerHTML = row.datetime;  // add fetched data to innerHTML
+            // td for time cell
+            const time = document.createElement("td");
+            time.innerHTML = row.datetime;  // add fetched data to innerHTML
+            
+            const temp = document.createElement("td");
+            temp.innerHTML = row.temp;
+
+            const description = document.createElement("td");
+            description.innerHTML = row.weather.description;
+
+            const precip = document.createElement("td");
+            precip.innerHTML = row.precip;
+
+            const snow = document.createElement("td");
+            snow.innerHTML = row.snow;
+
+            const uv = document.createElement("td");
+            uv.innerHTML = row.uv;
              
             // this builds ALL td's (cells) into tr (row) element
-            tr.appendChild(joke);
+            tr.appendChild(time);
 
             // this adds all the tr (row) work above to the HTML "result" container
             resultContainer.appendChild(tr);
