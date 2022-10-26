@@ -5,7 +5,6 @@ description:
 categories: [pbl]
 title: Hollywood Weather Forecast
 ---
-# Hollywood Weather Forecast
 <!-- HTML table fragment for page -->
 <table>
   <thead>
