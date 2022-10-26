@@ -61,7 +61,7 @@ title: Restaurant Preferences
       // valid response will have JSON data
       response.json().then(data => {
           console.log(data);
-          for (const row of data) {
+          for (const row of data.data) {
             // make "tr element" for each "row of data"
             const tr = document.createElement("tr");
             
