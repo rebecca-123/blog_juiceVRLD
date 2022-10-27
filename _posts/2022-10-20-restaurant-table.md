@@ -4,14 +4,15 @@ layout: post
 description: A frontend data display (via JS fetch) for restaurant API (made with BE POJO and JPA).
 categories: [pbl]
 title: San Diego Fast Food Preferences
+image: /images/fast_food.jpg
 ---
 <!-- HTML table fragment for page -->
 <table>
   <thead>
   <tr>
     <th>Restaurant</th>
-    <th>Delicious</th>
-    <th>Inedible</th>
+    <th>5 Star</th>
+    <th>1 Star</th>
   </tr>
   </thead>
   <tbody id="result">
@@ -26,8 +27,8 @@ title: San Diego Fast Food Preferences
   const resultContainer = document.getElementById("result");
 
   // keys for joke reactions
-  const DELI = "delicious";
-  const INED = "inedible";
+  const FIVE = "five";
+  const ONE = "one";
 
   // prepare fetch urls
   const url = "https://juicevrld.nighthawkcoding.ml/api/restaurants";
@@ -66,35 +67,35 @@ title: San Diego Fast Food Preferences
             const tr = document.createElement("tr");
             
             // td for joke cell
-            const joke = document.createElement("td");
-              joke.innerHTML = row.id + ". " + row.restr;  // add fetched data to innerHTML
+            const restaurant = document.createElement("td");
+              restaurant.innerHTML = row.id + ". " + row.restr;  // add fetched data to innerHTML
 
-            // td for haha cell with onclick actions
-            const haha = document.createElement("td");
-              const haha_but = document.createElement('button');
-              haha_but.id = DELI+row.id   // establishes a HAHA JS id for cell
-              haha_but.innerHTML = row.delicious;  // add fetched "haha count" to innerHTML
-              haha_but.onclick = function () {
+            // td for five cell with onclick actions
+            const five = document.createElement("td");
+              const five_but = document.createElement('button');
+              five_but.id = FIVE+row.id   // establishes a HAHA JS id for cell
+              five_but.innerHTML = row.five;  // add fetched "haha count" to innerHTML
+              five_but.onclick = function () {
                 // onclick function call with "like parameters"
-                reaction(DELI, like_url+row.id, haha_but.id);  
+                reaction(FIVE, like_url+row.id, five_but.id);  
               };
-              haha.appendChild(haha_but);  // add "haha button" to haha cell
+              five.appendChild(five_but);  // add "haha button" to haha cell
 
             // td for boohoo cell with onclick actions
-            const boohoo = document.createElement("td");
-              const boohoo_but = document.createElement('button');
-              boohoo_but.id = INED+row.id  // establishes a BOOHOO JS id for cell
-              boohoo_but.innerHTML = row.inedible;  // add fetched "boohoo count" to innerHTML
-              boohoo_but.onclick = function () {
+            const one = document.createElement("td");
+              const one_but = document.createElement('button');
+              one_but.id = ONE+row.id  // establishes a BOOHOO JS id for cell
+              one_but.innerHTML = row.one;  // add fetched "boohoo count" to innerHTML
+              one_but.onclick = function () {
                 // onclick function call with "jeer parameters"
-                reaction(INED, jeer_url+row.id, boohoo_but.id);  
+                reaction(ONE, jeer_url+row.id, one_but.id);  
               };
-              boohoo.appendChild(boohoo_but);  // add "boohoo button" to boohoo cell
+              one.appendChild(one_but);  // add "boohoo button" to boohoo cell
              
             // this builds ALL td's (cells) into tr (row) element
-            tr.appendChild(joke);
-            tr.appendChild(haha);
-            tr.appendChild(boohoo);
+            tr.appendChild(restaurant);
+            tr.appendChild(five);
+            tr.appendChild(one);
 
             // this adds all the tr (row) work above to the HTML "result" container
             resultContainer.appendChild(tr);
@@ -122,10 +123,10 @@ title: San Diego Fast Food Preferences
       response.json().then(data => {
           console.log(data);
           // Likes or Jeers updated/incremented
-          if (type === DELI) // like data element
-            document.getElementById(elemID).innerHTML = data.delicious;  // fetched haha data assigned to haha Document Object Model (DOM)
-          else if (type === INED) // jeer data element
-            document.getElementById(elemID).innerHTML = data.inedible;  // fetched boohoo data assigned to boohoo Document Object Model (DOM)
+          if (type === FIVE) // like data element
+            document.getElementById(elemID).innerHTML = data.five;  // fetched haha data assigned to haha Document Object Model (DOM)
+          else if (type === ONE) // jeer data element
+            document.getElementById(elemID).innerHTML = data.one;  // fetched boohoo data assigned to boohoo Document Object Model (DOM)
           else
             error("unknown type: " + type);  // should never occur
       })
