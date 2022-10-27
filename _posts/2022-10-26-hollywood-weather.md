@@ -4,6 +4,7 @@ layout: post
 description: 
 categories: [pbl]
 title: Hollywood Weather Forecast
+image: /images/hollywood.jpg
 ---
 <!-- HTML table fragment for page -->
 <table>
