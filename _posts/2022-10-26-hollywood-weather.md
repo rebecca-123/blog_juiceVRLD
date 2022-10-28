@@ -18,7 +18,8 @@ image: /images/hollywood.jpg
     <thead>
     <tr>
       <th>Time</th>
-      <th>Temperature</th>
+      <th>Temperature (&#8451;)</th>
+      <th>Temperature (&#8457;)</th>
       <th>Description</th>
       <th>Precipitation</th>
       <th>Snow</th>
@@ -75,6 +76,9 @@ image: /images/hollywood.jpg
             const temp = document.createElement("td");
             temp.innerHTML = row.temp;
 
+            const faren_temp = document.createElement("td");
+            faren_temp.innerHTML = row.temp * 9/5 + 32;
+
             const description = document.createElement("td");
             description.innerHTML = row.weather.description;
 
@@ -90,6 +94,7 @@ image: /images/hollywood.jpg
             // this builds ALL td's (cells) into tr (row) element
             tr.appendChild(time);
             tr.appendChild(temp);
+            tr.appendChild(faren_temp);
             tr.appendChild(description);
             tr.appendChild(precip);
             tr.appendChild(snow);
