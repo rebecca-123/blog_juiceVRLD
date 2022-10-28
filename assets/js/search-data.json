@@ -14,7 +14,7 @@
     
         ,"post1": {
             "title": "Hollywood Weather Forecast",
-            "content": "Time Temperature Description Precipitation Snow UV .",
+            "content": "Time Temperature (&#8451;) Temperature (&#8457;) Description Precipitation Snow UV .",
             "url": "https://rebecca-123.github.io/blog_juiceVRLD/pbl/2022/10/26/hollywood-weather.html",
             "relUrl": "/pbl/2022/10/26/hollywood-weather.html",
             "date": " • Oct 26, 2022"
