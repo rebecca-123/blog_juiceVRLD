@@ -172,12 +172,12 @@ window.onload = wrap_img;
 
             // td for five cell with onclick actions
             const five = document.createElement("td");
-              const five_but = document.createElement('button');
+              const five_but = document.createElement("button");
               five_but.id = FIVE+row.id   // establishes a HAHA JS id for cell
               five_but.innerHTML = row.five;  // add fetched "haha count" to innerHTML
               five_but.onclick = function () {
                 // onclick function call with "like parameters"
-                reaction(FIVE, fiveurl+row.id, five_but.id);  
+                reaction(FIVE, five_url+row.id, five_but.id);  
               };
               five.appendChild(five_but);  // add "haha button" to haha cell
             
