@@ -109,7 +109,7 @@ image: /images/fast_food.jpg
               three.appendChild(three_but);  
 
             const two = document.createElement("td");
-              const two_but = document.createELement("button");
+              const two_but = document.createElement("button");
               two_but.id = TWO+row.id;
               two_but.innerHTML = row.two;
               two_but.onclick = function () {
