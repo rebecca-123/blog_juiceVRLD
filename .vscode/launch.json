@@ -9,7 +9,7 @@
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open ccalc.html",
-            "file": "/Users/vaishavijay/Desktop/blog_juiceVRLD/_pages/currencycalc/ccalc.html"
+            "file": "/Users/vaishavijay/Desktop/blog_juiceVRLD/_pages/exchange.html"
         }
     ]
 }
