@@ -6,30 +6,22 @@ categories: [pbl]
 title: San Diego Fast Food Preferences
 image: /images/fast_food.jpg
 ---
-<style>
-  body {
-    background-image: url("/images/plain_hollywood.jpg");
-  }
-</style>
-
 <!-- HTML table fragment for page -->
-<body>
-  <table>
-    <thead>
-    <tr>
-      <th>Restaurant</th>
-      <th>5 Star</th>
-      <th>4 Star</th>
-      <th>3 Star</th>
-      <th>2 Star</th>
-      <th>1 Star</th>
-    </tr>
-    </thead>
-    <tbody id="result">
-      <!-- javascript generated data -->
-    </tbody>
-  </table>
-</body>
+<table>
+  <thead>
+  <tr>
+    <th>Restaurant</th>
+    <th>5 Star</th>
+    <th>4 Star</th>
+    <th>3 Star</th>
+    <th>2 Star</th>
+    <th>1 Star</th>
+  </tr>
+  </thead>
+  <tbody id="result">
+    <!-- javascript generated data -->
+  </tbody>
+</table>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
