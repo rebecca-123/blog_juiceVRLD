@@ -6,22 +6,30 @@ categories: [pbl]
 title: Hollywood Weather Forecast
 image: /images/hollywood.jpg
 ---
+<style>
+  body {
+    background-image: url("../images/plain_hollywood.jpg");
+  }
+</style>
+
 <!-- HTML table fragment for page -->
-<table>
-  <thead>
-  <tr>
-    <th>Time</th>
-    <th>Temperature</th>
-    <th>Description</th>
-    <th>Precipitation</th>
-    <th>Snow</th>
-    <th>UV</th>
-  </tr>
-  </thead>
-  <tbody id="result">
-    <!-- javascript generated data -->
-  </tbody>
-</table>
+<body>
+  <table>
+    <thead>
+    <tr>
+      <th>Time</th>
+      <th>Temperature</th>
+      <th>Description</th>
+      <th>Precipitation</th>
+      <th>Snow</th>
+      <th>UV</th>
+    </tr>
+    </thead>
+    <tbody id="result">
+      <!-- javascript generated data -->
+    </tbody>
+  </table>
+</body>
 
 <!-- Script is layed out in a sequence (without a function) and will execute when page is loaded -->
 <script>
