@@ -91,7 +91,7 @@ image: /images/fast_food.jpg
               five.appendChild(five_but);  // add "haha button" to haha cell
             
             const four = document.createElement("td");
-              const four_but = document.createELement("button");
+              const four_but = document.createElement("button");
               four_but.id = FOUR+row.id;
               four_but.innerHTML = row.four;
               four_but.onclick = function () {
@@ -100,7 +100,7 @@ image: /images/fast_food.jpg
               four.appendChild(four_but);
 
             const three = document.createElement("td");
-              const three_but = document.createELement("button");
+              const three_but = document.createElement("button");
               three_but.id = THREE+row.id;
               three_but.innerHTML = row.three;
               three_but.onclick = function () {
