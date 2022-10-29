@@ -77,7 +77,7 @@ image: /images/hollywood.jpg
             temp.innerHTML = row.temp;
 
             const faren_temp = document.createElement("td");
-            faren_temp.innerHTML = row.temp * 9/5 + 32;
+            faren_temp.innerHTML = (row.temp * 9/5 + 32).toFixed(1);
 
             const description = document.createElement("td");
             description.innerHTML = row.weather.description;
