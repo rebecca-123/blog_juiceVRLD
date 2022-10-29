@@ -8,7 +8,7 @@ image: /images/hollywood.jpg
 ---
 <style>
   body {
-    background-image: url("{{site.baseurl}}/images/plain_hollywood.jpg");
+    background-image: url("{{site.baseurl}}/images/plain-hollywood.jpg");
   }
 </style>
 
