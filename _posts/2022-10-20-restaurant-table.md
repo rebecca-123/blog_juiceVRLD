@@ -43,7 +43,7 @@ image: /images/fast_food.jpg
   const four_url = url + "/four/";
   const three_url = url + "/three/";
   const two_url = url + "/two/";
-   const one_url = url + "/one/";  //  1-star reaction
+  const one_url = url + "/one/";  //  1-star reaction
 
   // prepare fetch GET options
   const options = {
@@ -82,7 +82,7 @@ image: /images/fast_food.jpg
             // td for five cell with onclick actions
             const five = document.createElement("td");
               const five_but = document.createElement("button");
-              five_but.id = FIVE+row.id   // establishes a HAHA JS id for cell
+              five_but.id = FIVE+row.id;   // establishes a HAHA JS id for cell
               five_but.innerHTML = row.five;  // add fetched "haha count" to innerHTML
               five_but.onclick = function () {
                 // onclick function call with "like parameters"
@@ -119,8 +119,8 @@ image: /images/fast_food.jpg
               
             // td for boohoo cell with onclick actions
             const one = document.createElement("td");
-              const one_but = document.createElement('button');
-              one_but.id = ONE+row.id  // establishes a BOOHOO JS id for cell
+              const one_but = document.createElement("button");
+              one_but.id = ONE+row.id;  // establishes a BOOHOO JS id for cell
               one_but.innerHTML = row.one;  // add fetched "boohoo count" to innerHTML
               one_but.onclick = function () {
                 // onclick function call with "jeer parameters"
@@ -162,19 +162,25 @@ image: /images/fast_food.jpg
       response.json().then(data => {
           console.log(data);
           // Likes or Jeers updated/incremented
-          if (type === FIVE) // like data element
+          if (type === FIVE) { // like data element
             document.getElementById(elemID).innerHTML = data.five;  // fetched haha data assigned to haha Document Object Model (DOM)
           // additional ratings
-          else if (type === FOUR)
+          }
+          else if (type === FOUR){
             document.getElementbyId(elemID).innerHTML = data.four;
-          else if (type === THREE)
+          }
+          else if (type === THREE){
             document.getElementbyId(elemID).innerHTML = data.three;  
-          else if (type === TWO)
+          }
+          else if (type === TWO){
             document.getElementbyId(elemID).innerHTML = data.two;  
-          else if (type === ONE) // 1 star data element
+          }
+          else if (type === ONE){ // 1 star data element
             document.getElementById(elemID).innerHTML = data.one;  // fetched boohoo data assigned to boohoo Document Object Model (DOM)
-          else
+          }
+          else{
             error("unknown type: " + type);  // should never occur
+          }  
       })
     })
     // catch fetch errors (ie Nginx ACCESS to server blocked)
