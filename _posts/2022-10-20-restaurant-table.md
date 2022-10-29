@@ -165,20 +165,15 @@ image: /images/fast_food.jpg
           if (type === FIVE) { // like data element
             document.getElementById(elemID).innerHTML = data.five;  // fetched haha data assigned to haha Document Object Model (DOM)
           // additional ratings
-          }
-          else if (type === FOUR){
+          } else if (type === FOUR) {
             document.getElementbyId(elemID).innerHTML = data.four;
-          }
-          else if (type === THREE){
+          } else if (type === THREE) {
             document.getElementbyId(elemID).innerHTML = data.three;  
-          }
-          else if (type === TWO){
+          } else if (type === TWO) {
             document.getElementbyId(elemID).innerHTML = data.two;  
-          }
-          else if (type === ONE){ // 1 star data element
+          } else if (type === ONE) { // 1 star data element
             document.getElementById(elemID).innerHTML = data.one;  // fetched boohoo data assigned to boohoo Document Object Model (DOM)
-          }
-          else{
+          } else {
             error("unknown type: " + type);  // should never occur
           }  
       })
