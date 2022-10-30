@@ -6,7 +6,12 @@ $dark-grey : #9ecbd4;
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
-.site-nav, .site-title, .site-header, .site-footer {
+.site-footer{
+    background-color: #9ecbd4;
+    border-color: #9ecbd4;
+}
+
+.site-nav, .site-title, .site-header {
     background-color: #2c445c;
     border-color: #2c445c;
     color: #e5bdca !important;
