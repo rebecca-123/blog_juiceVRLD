@@ -12,6 +12,10 @@ $overlay-light: mix($dark-grey, white, 86%);
     color: #e5bdca !important;
 }
 
+.site-title, .site-title:visited, .site-nav, .page-link {
+    color: #e5bdca !important;
+}
+
 html, body, input, textarea, select, button {   
   color: $high-emph !important;
   background-color: $dark-grey !important;
@@ -23,10 +27,6 @@ a {
 
 a:hover {
     color:$high-emph !important;
-}
-
-.site-title, .site-title:visited, .site-nav, .page-link {
-    color: $high-emph !important;
 }
 
 * {
