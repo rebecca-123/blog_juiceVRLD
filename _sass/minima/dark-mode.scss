@@ -1,6 +1,6 @@
 $high-emph: rgba(#ffffff, 0.87);
-$med-emph: rgba(#ffffff, 0.69); //Noicee
-$low-emph: rgba(#ffffff, 0.38);
+$med-emph: rgba(#9ecbd4, 0.69); //Noicee
+$low-emph: rgba(#9ecbd4, 0.38);
 $dark-grey : #4D6D9A; 
 
 $overlay: mix($dark-grey, white, 95%);
@@ -24,8 +24,8 @@ a:hover {
 }
 
 .site-nav {
-    background-color: $dark-grey;
-    border-color: $overlay-light;
+    background-color: #759bbb;
+    // border-color: $overlay-light;
 }
 
 * {
