@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&display=swap");
 .highlight .c { color: #998; font-style: italic; }
 
 .highlight .err { color: #a61717; background-color: #e3d2d2; }
@@ -327,7 +329,7 @@ img.emoji { display: inline !important; vertical-align: baseline !important; }
 
 .post figcaption { text-align: center; font-size: .8rem; font-style: italic; color: light-grey; }
 
-.page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Segoe UI", SegoeUI, Roboto, "Segoe WP", "Helvetica Neue", "Helvetica", "Tahoma", "Arial", sans-serif !important; }
+.page-content { -webkit-font-smoothing: antialiased !important; text-rendering: optimizeLegibility !important; font-family: "Cardo", serif !important; letter-spacing: 0.4px; line-height: 32px; }
 
 .post-content p, .post-content li { font-size: 20px; color: #515151; }
 
@@ -429,11 +431,11 @@ pre code { font-size: 15px !important; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .site-footer { background-color: #9ecbd4 !important; border-color: #9ecbd4 !important; }
 
-.site-nav, .site-title, .site-header { background-color: #2c445c; border-color: #2c445c; color: #e5bdca !important; }
+.site-nav, .site-title, .site-header { background-color: #2c445c; border-color: #2c445c; color: #e5bdca !important; font-family: "Playfair Display", serif; letter-spacing: 1.7px; }
 
 .site-title, .site-title:visited, .site-nav, .page-link { color: #e5bdca !important; }
 
-html, body, input, textarea, select, button { color: rgba(44, 68, 92, 0.87) !important; background-color: #9ecbd4 !important; }
+html, body, input, textarea, select, button { color: rgba(44, 68, 92, 0.87) !important; background-color: #9ecbd4 !important; font-family: "Cardo", serif !important; }
 
 a { color: #2c445c !important; }
 
