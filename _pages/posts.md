@@ -1,3 +1,9 @@
+---
+layout: page
+title: Posts
+permalink: /posts/
+---
+
 <html>
   <h1>Posts</h1>
 
