@@ -429,13 +429,13 @@ pre code { font-size: 15px !important; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .site-nav, .site-title, .site-header { background-color: #2c445c; border-color: #2c445c; color: #e5bdca !important; }
 
+.site-title, .site-title:visited, .site-nav, .page-link { color: #e5bdca !important; }
+
 html, body, input, textarea, select, button { color: rgba(44, 68, 92, 0.87) !important; background-color: #9ecbd4 !important; }
 
 a { color: #2c445c !important; }
 
 a:hover { color: rgba(44, 68, 92, 0.87) !important; }
-
-.site-title, .site-title:visited, .site-nav, .page-link { color: rgba(44, 68, 92, 0.87) !important; }
 
 * { scrollbar-color: #9ecbd4 #acd2da; }
 
