@@ -74,7 +74,7 @@ image: /images/hollywood.jpg
             time.innerHTML = row.datetime;  // add fetched data to innerHTML
             
             const temp = document.createElement("td");
-            temp.innerHTML = row.temp;
+            temp.innerHTML = row.temp.toFixed(1);
 
             const faren_temp = document.createElement("td");
             faren_temp.innerHTML = (row.temp * 9/5 + 32).toFixed(1);
