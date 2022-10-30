@@ -1,7 +1,7 @@
-$high-emph: rgba(#ffffff, 0.87);
-$med-emph: rgba(#ffffff, 0.69); //Noicee
-$low-emph: rgba(#97b3d4, 0.38);
-$dark-grey : #233247; 
+$high-emph: rgba(#e5bdca, 0.87);
+$med-emph: rgba(#9ca3c0, 0.69); //Noicee
+$low-emph: rgba(#9ca3c0, 0.38);
+$dark-grey : #9ecbd4; 
 
 $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
@@ -24,8 +24,8 @@ a:hover {
 }
 
 .site-nav, .site-title, .site-header {
-    background-color: #9ca3c0;
-    // border-color: $overlay-light;
+    background-color: #4d6e9b;
+    border-color: #4d6e9b;
 }
 
 * {
