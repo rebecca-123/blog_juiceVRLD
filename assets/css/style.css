@@ -429,11 +429,11 @@ pre code { font-size: 15px !important; }
 
 /*-----------------------------------*/
 /*----- ADD YOUR STYLES BELOW -------*/
-.site-footer { background-color: #9ecbd4 !important; border-color: #9ecbd4 !important; }
+.site-footer { background-color: #D5A6A6 !important; border-color: #D5A6A6 !important; }
 
-.site-nav, .site-title, .site-header { background-color: #2c445c; border-color: #2c445c; color: #e5bdca !important; font-family: "Playfair Display", serif; letter-spacing: 1.7px; }
+.site-nav, .site-title, .site-header { background-color: #2c445c; border-color: #2c445c; color: #404a7c !important; font-family: "Playfair Display", serif; letter-spacing: 1.7px; }
 
-.site-title, .site-title:visited, .site-nav, .page-link { color: #e5bdca !important; }
+.site-title, .site-title:visited, .site-nav, .page-link { color: #404a7c !important; }
 
 html, body, input, textarea, select, button { color: rgba(44, 68, 92, 0.87) !important; background-color: #9ecbd4 !important; font-family: "Cardo", serif !important; }
 
