@@ -1,12 +1,11 @@
 ---
 toc: true
 layout: post
-description: .\\
+description: 
 categories: [pbl]
 title: Tourist Sites
 image: /images/hollywood.jpg
 ---
-<!-- HTML table fragment for page -->
 
 <html lang="en">
 <head>
@@ -42,7 +41,7 @@ image: /images/hollywood.jpg
 <body>
 
 
-<h1 style="font-size:45px; color:#e0e1dd;">Random Picture Generator</h1>
+<h1>Random Site Image Generator</h1>
 
 
 <button onclick="newPicture()" class="btn-group" style="margin-right: 30px;"> New Picture</button>
@@ -53,7 +52,7 @@ image: /images/hollywood.jpg
 
 
 <div id="board">
-<img id="pictureDisplay" class="pictures" src="../images/{{files}}">
+<img id="pictureDisplay" class="pictures" src="../images/">
 
 </div>
 
