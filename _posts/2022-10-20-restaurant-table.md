@@ -5,6 +5,7 @@ description: A frontend data display (via JS fetch) for restaurant API (made wit
 categories: [pbl]
 title: San Diego Fast Food Preferences
 image: /images/fast_food.jpg
+permalink: /pbl/sd-fast-food
 ---
 <!-- HTML table fragment for page -->
 <table>

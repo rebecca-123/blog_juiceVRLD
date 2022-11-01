@@ -4,6 +4,7 @@ layout: post
 description: Designing tables/models for website data.
 categories: [pbl]
 title: Data Modeling for Travel Website
+permalink: /pbl/data-modeling
 ---
 # Data Modeling for Travel Website
 

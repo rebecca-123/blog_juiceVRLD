@@ -5,6 +5,7 @@ description:
 categories: [pbl]
 title: Hollywood Weather Forecast
 image: /images/hollywood.jpg
+permalink: /pbl/hollywood-weather
 ---
 <style>
   body {
