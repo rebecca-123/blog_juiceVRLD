@@ -99,18 +99,13 @@ window.onload = wrap_img;
 
   <div class="post-content e-content" itemprop="articleBody">
     <ul id="toc" class="section-nav">
-<li class="toc-entry toc-h1"><a href="#tourist-sites-random">Tourist Sites (Random)</a></li>
 <li class="toc-entry toc-h1"><a href="#random-picture-generator">Random Picture Generator</a></li>
 </ul><body>
-<h1 id="tourist-sites-random">
-<a class="anchor" href="#tourist-sites-random" aria-hidden="true"><span class="octicon octicon-link"></span></a>Tourist Sites (Random)</h1>
 <!-- HTML table fragment for page -->
 
-<p>&lt;!DOCTYPE html&gt;</p>
 
 
     <meta charset="UTF-8">
-    <title>Tourist Sites (Random)</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
 <style>
@@ -185,7 +180,7 @@ function newPicture() {
     // round down the randomSeed to a random number int, e.g 0~9
     // The Math.floor() function returns the largest integer less than or equal to a given number
     var randomNumber = Math.floor(randomSeed);
-    document.getElementById('pictureDisplay').src = "/static/assets/pictures/" + pictures[randomNumber];
+    document.getElementById('pictureDisplay').src = "../images/" + pictures[randomNumber];
 }
 
 function grayIt(){
