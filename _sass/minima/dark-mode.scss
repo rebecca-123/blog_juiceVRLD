@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&display=swap');
+@@import url('https://fonts.googleapis.com/css2?family=Cardo&family=Playfair+Display&display=swap');
 
 $high-emph: rgba(#2c445c, 0.87);
 $med-emph: rgba(#3c425d, 0.87); // 0.69
@@ -9,8 +9,8 @@ $overlay: mix($dark-grey, white, 95%);
 $overlay-light: mix($dark-grey, white, 86%);
 
 .site-footer {
-    background-color: #D5A6A6 !important;
-    border-color: #D5A6A6 !important;
+    background-color: #9ecbd4 !important;
+    border-color: #9ecbd4 !important;
 }
 
 .site-nav,
@@ -18,7 +18,7 @@ $overlay-light: mix($dark-grey, white, 86%);
 .site-header {
     background-color: #2c445c;
     border-color: #2c445c;
-    color: #404a7c !important;
+    color: #e5bdca !important;
     font-family: "Playfair Display", serif;
     letter-spacing: 1.7px;
 }
@@ -27,7 +27,7 @@ $overlay-light: mix($dark-grey, white, 86%);
 .site-title:visited,
 .site-nav,
 .page-link {
-    color: #404a7c !important;
+    color: #e5bdca !important;
 }
 
 html,
