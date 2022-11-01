@@ -6,14 +6,11 @@ categories: [pbl]
 title: Tourist Sites
 image: /images/hollywood.jpg
 ---
-# Tourist Sites (Random)
 <!-- HTML table fragment for page -->
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Tourist Sites (Random)</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <style>
@@ -87,7 +84,7 @@ function newPicture() {
     // round down the randomSeed to a random number int, e.g 0~9
     // The Math.floor() function returns the largest integer less than or equal to a given number
     var randomNumber = Math.floor(randomSeed);
-    document.getElementById('pictureDisplay').src = "/static/assets/pictures/" + pictures[randomNumber];
+    document.getElementById('pictureDisplay').src = "../images/" + pictures[randomNumber];
 }
 
 function grayIt(){
