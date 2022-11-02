@@ -52,7 +52,7 @@ image: /images/hollywood.jpg
 
 
 <div id="board">
-<img id="pictureDisplay" class="pictures" src="../images/">
+<img id="pictureDisplay" class="pictures" src="{{site.baseurl}}/images/">
 
 </div>
 
@@ -83,7 +83,7 @@ function newPicture() {
     // round down the randomSeed to a random number int, e.g 0~9
     // The Math.floor() function returns the largest integer less than or equal to a given number
     var randomNumber = Math.floor(randomSeed);
-    document.getElementById('pictureDisplay').src = "../images/" + pictures[randomNumber];
+    document.getElementById('pictureDisplay').src = "{{site.baseurl}}/images/" + pictures[randomNumber];
 }
 
 function grayIt(){
