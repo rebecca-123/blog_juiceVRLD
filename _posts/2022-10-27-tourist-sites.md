@@ -2,7 +2,7 @@
 layout: post
 description: 
 categories: [pbl]
-image: /images/travel1.jpg
+image: /images/travel1.jpeg
 permalink: /pbl/tourist-sites
 ---
 
