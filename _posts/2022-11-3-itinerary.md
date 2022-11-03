@@ -86,19 +86,14 @@
     margin: 5px;
     font-size: 1.2em;
     border: 0;
-    background: olivedrab;
+    background: #a3ced6;
     color: #fff;
 }
 </style>
 
 <html>
-    <body style="background-color: #2c81a0">
-    <div style="margin-top:5%; margin-left: auto; margin-right: auto; text-align: center; font-family: monospace" id="cal-wrap">
-        <h1 style="color: olivedrab">Itinerary/h1>
-        <p>
-            Click on a date to add your plan for the day during your travel:
-        </p>
-    </div>
+    <body style="background-color: #a3ced6">
+        <h1>Itinerary</h1>
     <div style="margin-top:1%; margin-left: auto; margin-right: auto" id="cal-wrap">
         <!-- (A) PERIOD SELECTOR -->
         <div id="cal-date">
