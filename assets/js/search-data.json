@@ -25,7 +25,7 @@
     
         ,"post2": {
             "title": "Tourist Sites",
-            "content": ". Random Site Image Generator . New Picture Grayscale Blur .",
+            "content": ". Random Site Image Generator . New Picture Grayscale Blur &lt;/body&gt; &lt;/html&gt; .",
             "url": "https://rebecca-123.github.io/blog_juiceVRLD/pbl/2022/10/27/tourist-sites.html",
             "relUrl": "/pbl/2022/10/27/tourist-sites.html",
             "date": " • Oct 27, 2022"
