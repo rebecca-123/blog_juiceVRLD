@@ -1,9 +1,7 @@
 ---
-toc: true
 layout: post
 description: 
 categories: [pbl]
-title: Tourist Sites
 image: /images/hollywood.jpg
 ---
 
@@ -42,7 +40,7 @@ image: /images/hollywood.jpg
 <body>
 
 <center>
-<h1>Random Site Image Generator</h1>
+<h1>Random Tourist Site Image Generator</h1>
 
 
 <button onclick="newPicture()" class="btn-group" style="margin-right: 30px;"> New Picture</button>
