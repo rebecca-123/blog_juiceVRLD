@@ -27,6 +27,7 @@ image: /images/hollywood.jpg
     .pictures{
         width: auto;
         height: 500px;
+        margin-top: -14px;
     }
     .grayscale{
         filter: grayscale(100%);
