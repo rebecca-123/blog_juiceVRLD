@@ -14,7 +14,7 @@ body{
   justify-content: center;
   min-height: 100vh;
   padding: 0 10px;
-  background: #675AFE;
+  background: #a3ced6;
 }
 ::selection{
   color: #fff;
