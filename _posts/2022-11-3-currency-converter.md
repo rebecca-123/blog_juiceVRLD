@@ -1,6 +1,5 @@
 ---
 toc: false
-layout: post
 description: 
 categories: [pbl]
 title: Currency Converter
