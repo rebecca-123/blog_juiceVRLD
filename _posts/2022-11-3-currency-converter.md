@@ -155,7 +155,7 @@ form button:hover{
         <button>Get Exchange Rate</button>
       </form>
     </div>
-    </html>
+
 
 <script>
     const dropList = document.querySelectorAll("form select"),
