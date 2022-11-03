@@ -139,6 +139,22 @@
   
 
   
+      ,"page3": {
+          "title": "",
+          "content": "myList . character count: . . .",
+          "url": "https://rebecca-123.github.io/blog_juiceVRLD/pbl/reminders",
+          "relUrl": "/pbl/reminders",
+          "date": ""
+      }
+      
+  
+
+  
+  
+
+  
+
+  
   
 
   
@@ -147,18 +163,13 @@
   
 
   
-
-  
   
 
   
   
 
   
-  
-
-  
-      ,"page10": {
+      ,"page11": {
           "title": "",
           "content": "Sitemap: {{ “sitemap.xml” | absolute_url }} | .",
           "url": "https://rebecca-123.github.io/blog_juiceVRLD/robots.txt",
