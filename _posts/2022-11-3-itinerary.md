@@ -120,8 +120,6 @@ permalink: /pbl/itinerary
         </form>
         <br>
     <br><br><br>
-    </body>
-    </html>
     <script>
     const cal = {
     // (A) PROPERTIES
