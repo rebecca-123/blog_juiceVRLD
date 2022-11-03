@@ -63,16 +63,16 @@ image: /images/hollywood.jpg
 
 <script>
 var pictures = [
-    "packing.jpg",
     "hollywood.jpg",
     "plain-hollywood.jpg",
-    "s1.png",
-    "s2.png",
-    "s3.png",
-    "s4.png",
-    "s5.png",
-    "s5.png",
-    "s6.png"
+    "travel1.jpeg",
+    "travel2.jpeg",
+    "travel3.jpeg",
+    "travel4.jpg",
+    "travel5.jpg",
+    "travel6.jpg",
+    "travel7.jpg",
+    "travel8.jpg",
 ]
 
 function newPicture() {
