@@ -285,7 +285,7 @@ permalink: /pbl/itinerary
         let isEdit = cal.data[cal.sDay] !== undefined;
         // (D2) UPDATE EVENT FORM
         cal.hfTxt.value = isEdit ? cal.data[cal.sDay] : "";
-        cal.hfHead.innerHTML = isEdit ? "EDIT EVENT" : "Add To Your Itinerary";
+        cal.hfHead.innerHTML = isEdit ? "Edit Event" : "Add To Your Itinerary";
         cal.hfDate.innerHTML = `${cal.sDay} ${cal.mName[cal.sMth]} ${cal.sYear}`;
         if (isEdit) {
             cal.hfDel.classList.remove("ninja");
