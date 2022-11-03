@@ -1,3 +1,11 @@
+---
+layout: post
+description: 
+categories: [pbl]
+image: /images/travel1.jpeg
+permalink: /pbl/itinerary
+---
+
 <style>
 /* (A) ENTIRE PAGE */
 #cal-wrap * { font-family: arial, sans-serif; }
@@ -93,7 +101,6 @@
 
 <html>
     <body style="background-color: #a3ced6">
-        <h1>Itinerary</h1>
     <div style="margin-top:1%; margin-left: auto; margin-right: auto" id="cal-wrap">
         <!-- (A) PERIOD SELECTOR -->
         <div id="cal-date">
@@ -280,7 +287,7 @@
         let isEdit = cal.data[cal.sDay] !== undefined;
         // (D2) UPDATE EVENT FORM
         cal.hfTxt.value = isEdit ? cal.data[cal.sDay] : "";
-        cal.hfHead.innerHTML = isEdit ? "EDIT EVENT" : "ADD EVENT";
+        cal.hfHead.innerHTML = isEdit ? "EDIT EVENT" : "ADD TO YOUR INTINERARY";
         cal.hfDate.innerHTML = `${cal.sDay} ${cal.mName[cal.sMth]} ${cal.sYear}`;
         if (isEdit) {
             cal.hfDel.classList.remove("ninja");
