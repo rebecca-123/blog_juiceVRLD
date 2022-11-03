@@ -1,11 +1,10 @@
-
 ---
 toc: false
 layout: post
 description: 
 categories: [pbl]
 title: Currency Converter
-permalink: /pbl/currency-converter
+permalink: pbl/currency-converter
 ---
 
 <style>
