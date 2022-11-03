@@ -2,7 +2,8 @@
 layout: post
 description: 
 categories: [pbl]
-image: /images/hollywood.jpg
+image: /images/travel1.jpg
+permalink: /pbl/tourist-sites
 ---
 
 <html lang="en">

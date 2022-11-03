@@ -1,4 +1,13 @@
 
+---
+toc: false
+layout: post
+description: 
+categories: [pbl]
+title: Currency Converter
+permalink: /pbl/currency-converter
+---
+
 <style>
   /* Import Google Font - Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
