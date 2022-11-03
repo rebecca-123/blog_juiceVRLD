@@ -41,7 +41,7 @@ image: /images/hollywood.jpg
 </style>
 <body>
 
-
+<center>
 <h1>Random Site Image Generator</h1>
 
 
@@ -61,6 +61,7 @@ image: /images/hollywood.jpg
 
 </body>
 </html>
+<center>
 
 <script>
 var pictures = [
