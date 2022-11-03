@@ -24,7 +24,7 @@
     font-weight: bold;
     text-transform: uppercase;
     color: #fff;
-    background: darkolivegreen;
+    background: #2c81a0;
     padding: 15px;
     text-align: center;
 }
@@ -42,7 +42,7 @@
     background: transparent;
 }
 #calendar tr td.today {
-    background: olivedrab;
+    background: #a3ced6;
 }
 #calendar .dd {
     font-size: 1.2em;
@@ -53,7 +53,7 @@
     font-size: 0.8em;
     font-weight: bold;
     overflow: hidden;
-    color: darkolivegreen;
+    color: #2c81a0;
 }
 
 /* (E) ADD/EDIT EVENT */
@@ -92,10 +92,7 @@
 </style>
 
 <html>
-<head>
-        <title>Itinerary</title>
-    </head>
-    <body style="background-color: darkseagreen">
+    <body style="background-color: #2c81a0">
     <div style="margin-top:5%; margin-left: auto; margin-right: auto; text-align: center; font-family: monospace" id="cal-wrap">
         <h1 style="color: olivedrab">Itinerary/h1>
         <p>
