@@ -52,7 +52,7 @@ permalink: /pbl/tourist-sites
 
 
 <div id="board">
-<img id="pictureDisplay" class="pictures" src="{{site.baseurl}}/images/">
+<img id="pictureDisplay" class="pictures" src="{{site.baseurl}}/images/"> 
 
 </div>
 
@@ -63,6 +63,7 @@ permalink: /pbl/tourist-sites
 <center>
 
 <script>
+//pictures
 var pictures = [
     "hollywood.jpg",
     "plain-hollywood.jpg",
@@ -76,6 +77,7 @@ var pictures = [
     "travel8.jpg",
 ]
 
+//randomly generate picture from pictures list
 function newPicture() {
     // get a random factor, e.g 0-1
     var randomFactor = Math.random();
@@ -87,12 +89,14 @@ function newPicture() {
     document.getElementById('pictureDisplay').src = "{{site.baseurl}}/images/" + pictures[randomNumber];
 }
 
+//grayscale 
 function grayIt(){
     if($('#pictureDisplay').hasClass("blur")) $('#pictureDisplay').removeClass('blur');
     if($('#pictureDisplay').hasClass("grayscale")) $('#pictureDisplay').removeClass('grayscale');
     else $('#pictureDisplay').addClass('grayscale');
 }
 
+//blur
 function blurIt(){
     if($('#pictureDisplay').hasClass("grayscale")) $('#pictureDisplay').removeClass('grayscale');
     if($('#pictureDisplay').hasClass("blur")) $('#pictureDisplay').removeClass('blur');
