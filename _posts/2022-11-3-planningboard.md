@@ -2,12 +2,17 @@
 layout: post
 description: 
 categories: [pbl]
-permalink: /pbl/reminders
+permalink: /pbl/planningboard
 ---
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Roboto:400,300,500);
+/* (A) ENTIRE PAGE */
+#cal-wrap * { font-family: arial, sans-serif; }
+.ninja { display: none !important; }
 
+/* (B) CONTAINER */
+#cal-wrap { max-width: 600px; }
 body,
 html,
 div.board,
