@@ -30,7 +30,7 @@ permalink: /pbl/sd-fast-food
   // prepare HTML defined "result" container for new output
   const resultContainer = document.getElementById("result");
 
-  // keys for joke reactions
+  // keys for restaurant reactions
   const FIVE = "five";
   const FOUR = "four";
   const THREE = "three";
@@ -83,13 +83,13 @@ permalink: /pbl/sd-fast-food
             // td for five cell with onclick actions
             const five = document.createElement("td");
               const five_but = document.createElement("button");
-              five_but.id = FIVE+row.id;   // establishes a HAHA JS id for cell
-              five_but.innerHTML = row.five;  // add fetched "haha count" to innerHTML
+              five_but.id = FIVE+row.id;   // establishes a 5 star JS id for cell
+              five_but.innerHTML = row.five;  // add fetched "5 star count" to innerHTML
               five_but.onclick = function () {
                 // onclick function call with "like parameters"
                 reaction(FIVE, five_url+row.id, five_but.id);  
               };
-              five.appendChild(five_but);  // add "haha button" to haha cell
+              five.appendChild(five_but);  // add "5 star button" to haha cell
             
             const four = document.createElement("td");
               const four_but = document.createElement("button");

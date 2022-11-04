@@ -69,7 +69,8 @@ permalink: /pbl/hollywood-weather
           for (const row of data.data) {
             // make "tr element" for each "row of data"
             const tr = document.createElement("tr");
-            
+
+            // access different values by the keys            
             // td for time cell
             const time = document.createElement("td");
             time.innerHTML = row.datetime;  // add fetched data to innerHTML
