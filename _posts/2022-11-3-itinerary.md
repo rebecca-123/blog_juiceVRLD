@@ -2,100 +2,36 @@
 layout: post
 description: 
 categories: [pbl]
-image: /images/travel1.jpeg
-permalink: /pbl/itinerary
+permalink: /pbl/reminders
 ---
 
 <style>
-/* (A) ENTIRE PAGE */
-#cal-wrap * { font-family: arial, sans-serif; }
-.ninja { display: none !important; }
-
-/* (B) CONTAINER */
-#cal-wrap { max-width: 600px; }
-
-/* (C) PERIOD SELECTOR */
-#cal-date { display: flex; }
-#cal-mth, #cal-yr {
-    box-sizing: border-box;
-    padding: 10px 20px;
-    font-size: 1.2em;
-    border: 0;
+body {
+			font-family: helvetica, arial, 'sans-serif';
+			font-size: 62.5%;
+      line-height:125%;
+			background-color: #fff;
+			color:#d6d6d6;
 }
 
-/* (D) CALENDAR */
-#calendar {
-    width: 100%;
-    border-collapse: collapse;
-}
-#calendar tr.head td {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: #fff;
-    background: #2c81a0;
-    padding: 15px;
-    text-align: center;
-}
-#calendar tr.day td {
-    border: 1px solid #ddd;
-    width: 14.28%;
-    padding: 15px 5px;
-    vertical-align: top;
-}
-#calendar tr.day td:hover {
-    background: #fff9e4;
-    cursor: pointer;
-}
-#calendar tr td.blank {
-    background: transparent;
-}
-#calendar tr td.today {
-    background: #a3ced6;
-}
-#calendar .dd {
-    font-size: 1.2em;
-    color: black;
-}
-#calendar .evt {
-    margin-top: 5px;
-    font-size: 0.8em;
-    font-weight: bold;
-    overflow: hidden;
-    color: #2c81a0;
+#container {width:40%; margin:0 auto; font-size:4em;}
+input {
+  background:transparent;
+  border:none;
+  border-bottom:1px solid #767676;
+  width:100%;
+  font-size:0.9em;
+  margin-top:0.5em;
+  padding:0.25em 0;
+  box-sizing:content-box;
 }
 
-/* (E) ADD/EDIT EVENT */
-#cal-event {
-    padding: 15px;
-    margin-top: 20px;
-    background: #f5f5f5;
-    border: 1px solid #ddd;
+ul li {
+  line-height:150%;
 }
-#cal-event h1 {
-    color: #333;
-    padding: 0;
-    margin: 0;
-}
-#evt-date {
-    color: black;
-    margin: 10px 0;
-}
-#cal-event textarea {
-    display: block;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ddd;
-    min-height: 100px;
-}
-#cal-event input[type=button], #cal-event input[type=submit] {
-    padding: 10px;
-    margin: 5px;
-    font-size: 1.2em;
-    border: 0;
-    background: #a3ced6;
-    color: #fff;
+
+.error {
+  color:red;
 }
 </style>
 
