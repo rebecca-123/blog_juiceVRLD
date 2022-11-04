@@ -7,19 +7,6 @@ permalink: /pbl/planningboard
 
 <style>
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Roboto:400,300,500);
-/* (A) ENTIRE PAGE */
-#cal-wrap * { font-family: arial, sans-serif; }
-.ninja { display: none !important; }
-
-/* (B) CONTAINER */
-#cal-wrap { max-width: 600px; }
-body,
-html,
-div.board,
-div#react-container {
-    height: 100%;
-    overflow: hidden;
-}
 
 body {
     margin: 0;
@@ -28,7 +15,8 @@ body {
     font-weight: 400;
     font-size: 1em;
     line-height: 1.2em;
-    color: #30096b;
+    color: #722fd6
+;
     background-color: #246996;
 } 
 
@@ -41,7 +29,7 @@ h1 {
    font-size: 2.6em;
    font-weight: 400;
    line-height: 1.0em;
-   color: #C49510;
+   color: #c52fd6;
 }
 
 h2 {
@@ -138,8 +126,8 @@ div.note textarea {
    <body>
 <div id="outer">
 	<div id="header">
-		<h1>Demo from Lynda Course<br/><span id="h1-span">- Learn React.js: The Basics -</span></h1>
-		<span><h2>Bulletin Board App</h2></span><span id="lynda-link">Visit Lynda.com</span>
+		<h1>Planning Board<br/><span id="h1-span">--</span></h1>
+		<span><h2>Bulletin Board App</h2></span><span id=""></span>
 	</div>
 	<div id="react-container">
 	</div>
