@@ -6,291 +6,248 @@ permalink: /pbl/planningboard
 ---
 
 <style>
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light|Roboto:400,300,500);
+ 
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 1.2em;
-    color: #722fd6
-;
-    background-color: #246996;
-} 
-
-#outer {        
-   display: inline;
+.wrapper {
+  padding: 30px;
 }
 
-h1 {
-   text-align: center;
-   font-size: 2.6em;
-   font-weight: 400;
-   line-height: 1.0em;
-   color: #c52fd6;
+.box {
+  border: 25px solid grey;
+  width: 78%;
+  background: #e8ca95;
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+  box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+
+   
 }
 
-h2 {
-   font-family: 'Roboto', sans-serif;
-   font-weight: bold;
-   font-size: 1.6em;
+.an-wrap {
+  background: #8a3333;
+  padding: 18px;
+  color: white;
+  -o-transform: rotate(-3deg);
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
 }
 
-h1 {
-   text-shadow: 1px 1px 1px rgb(221, 222, 229);
-   margin: 20px 0;
+.em-wrap {
+  padding: 18px;
+  background: bisque;
+  font-size: 12px;
+  -o-transform: rotate(3deg);
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
 }
 
-#h1-span {
-   font-size: 0.7em; 
-   text-shadow: 1px 1px 1px rgb(100, 100, 100);
+.memo-wrap {
+  padding: 18px;
+  background: aliceblue;
+  font-size: 12px;
+  -o-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -moz-transform: rotate(5deg);
 }
 
-#header h2 {
-   text-align: center;
+.title-an {
+  padding-bottom: 1px;
 }
 
-#lynda-link {
-   font-family: 'Roboto', sans-serif;
-   font-size: 0.9em;
-   float: right;
-   margin: -40px 40px 0 0;
+.date-an {
+  font-size: 11px;
+  padding-bottom: 5px;
 }
 
-#header {
-   border-bottom: 2px solid #C7C7AB;
-   background-color: #246996;
+.cont-an {
+  font-size: 12px;
 }
 
-div.board {
-    background-color: 'brown';
+ 
+
+.news-wrap {
+  font-size: 12px;
+  background: #ffff;
+  padding: 23px;
+}
+
+.new-img {
+  width: 84px;
+  float: left;
+  height: auto;
+  margin-right: 11px;
+}
+
+.news-title {
+  font-size: 18px;
+  padding-bottom: 7px;
+}
+
+.news-sub-title {
+  font-size: 11px;
+  font-style: italic;
+}
+
+.marker-icon {
+  width: 16px;
+  height: 20px;
+  position: absolute;
+  top: 0px;
+  left: 26px;
+}
+
+.title-em {
+  font-size: 18px;
+}
+
+.from-em {
+  margin-top: 3px;
+}
+
+.date-em {
+  margin-bottom: 3px;
+}
+
+.an-img {
+  width: 100%;
+  margin-right: 4px;
+  height: auto;
+}
+
+.an-wrap:hover,
+.news-wrap:hover,
+.memo-wrap:hover,
+.em-wrap:hover {
+  -webkit-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+  -moz-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+  box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+
+  cursor: pointer;
+
+  transform: scale(1.1);
+  -webkit-transition: transform 0.2s ease-in-out;
+  -moz-transition: transform 0.2s ease-in-out;
+  -ms-transition: transform 0.2s ease-in-out;
+}
+
+.an-wrap:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: -1px;
+  border-width: 0 16px 16px 0;
+  border-style: solid;
+  border-color: #fcf5e7 #e8ca95 #ffffff #e8ca95;
+  background: #e8ca95;
+  display: block;
+  width: 0;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
+    -1px 1px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+@media only screen and (max-width: 768px) {
+  .box {
     width: 100%;
-    background: #eab92d;
-}
+  }
 
-div.note {
-    height: 150px;
-    width: 150px;
-    background-color: yellow;
-    margin: 2px 0;
-    position: absolute;
-    cursor: -webkit-grab;
-    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
-    overflow: hidden;
-}
 
-div.note:active {
-    cursor: -webkit-grabbing;
-}
 
-div.note p {
-    margin: 0;
-    font-size: 22px;
-    padding: 5px;
-    font-family: "Shadows Into Light", Arial;
-    line-height: 1.1;
-}
-
-div.note:hover > span {
-    opacity: 1;
-}
-
-div.note > span {
-    position: absolute;
-    bottom: 2px;
-    right: 2px;
-    opacity: 0;
-    transition: opacity .25s linear;
-}
-
-div.note button {
-    margin: 2px;
-}
-
-div.note textarea {
-    height: 75%;
-    background: rgba(255, 255, 255, .5);
-}
-
-.board > button {
-    position: fixed;
-    top: 190px;
-    right: 16px;
-    font-size: 1.5em;
-}
 </style>
 
 <html>
-   <body>
-<div id="outer">
-	<div id="header">
-		<h1>Planning Board<br/><span id="h1-span">--</span></h1>
-		<span><h2>Bulletin Board App</h2></span><span id=""></span>
-	</div>
-	<div id="react-container">
-	</div>
+<div class="wrapper">
+  <div class="container-fluid box px-md-3 py-3">
+    <div class="row">
+      <div class="col-md-3 ">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="an-wrap" id="a1">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-an">Announcement Title</div>
+              <div class="date-an">23-08-2019</div>
+              <div class="cont-an"><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="an-img">In the first paragraph, want to deliver your most critical information upfront, and then use subsequent paragraphs as opportunities to dive into more
+                detail</div>
+            </div>
+          </div>
+          <div class="col-md-12 mt-3">
+            <div class="memo-wrap" id="m1">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-em">Memo1</div>
+              <div class="from-em">From :xxxxy@gmail.com</div>
+              <div class="date-em">Date : 23-08-2019</div>
+              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase, A memo is </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 ">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="news-wrap" id="n1">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="news-title">Title1</div>
+              <p class="news-sub-title">Sub Title1</p><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="new-img"> In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase,
+              . A memo is meant
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="em-wrap" id="e1">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-em">Leave Approval</div>
+              <div class="from-em">From : deepak@gmail.com</div>
+              <div class="date-em">Date : 23-08-2019</div>
+              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo more detail. new</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="memo-wrap" id="m2">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-em">Memo1</div>
+              <div class="from-em">From : deepak@gmail.com</div>
+              <div class="date-em">Date : 23-08-2019</div>
+              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase, A memo is </div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="news-wrap" id="n2">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="news-title">Title1</div>
+              <p class="news-sub-title">Sub Title1</p><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="new-img"> In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase,
+              . A memo is meant
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <div class="an-wrap" id="a2">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-an">Announcement Title</div>
+              <div class="date-an">23-08-2019</div>
+              <div class="cont-an"><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="an-img">In the first paragraph, want to deliver your most critical information upfront, and then use subsequent paragraphs as opportunities to dive into more
+                detail</div>
+            </div>
+          </div>
+          <div class="col-md-12 mb-3">
+            <div class="em-wrap" id="e2">
+              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon">
+              <div class="title-em">Leave Approval</div>
+              <div class="from-em">From : deepak@gmail.com</div>
+              <div class="date-em">Date : 23-08-2019</div>
+              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo more detail. new</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-<script type="text/babel">
-    var Note = React.createClass({
-        getInitialState() {
-            return {editing: false}
-        },
-        componentWillMount() {
-            this.style = {
-                right: this.randomBetween(0, window.innerWidth - 150, 'px'),
-                top: this.randomBetween(220, window.innerHeight - 150, 'px')
-            }
-        },
-        componentDidUpdate() {
-            if (this.state.editing) {
-                this.refs.newText.focus()
-                this.refs.newText.select()
-            }
-        },
-        shouldComponentUpdate(nextProps, nextState) {
-            return this.props.children !== nextProps.children || this.state !== nextState
-        },
-        randomBetween(x, y, s) {
-            return (x + Math.ceil(Math.random() * (y - x))) + s
-        },
-        edit() {
-            this.setState({editing: true})
-        },
-        save() {
-            this.props.onChange(this.refs.newText.value, this.props.id)
-            this.setState({editing: false})
-        },
-        remove() {
-            this.props.onRemove(this.props.id)
-        },
-        renderForm() {
-            return (
-                <div className="note"
-                     style={this.style}>
-                        <textarea ref="newText"
-                                  defaultValue={this.props.children}>
-                        </textarea>
-                    <button onClick={this.save}>SAVE</button>
-                </div>
-            )
-        },
-        renderDisplay() {
-            return (
-                <div className="note"
-                     style={this.style}>
-                    <p>{this.props.children}</p>
-                    <span>
-                            <button onClick={this.edit}>EDIT</button>
-                            <button onClick={this.remove}>X</button>
-                        </span>
-                </div>
-            )
-        },
-        render() {
-            return ( <ReactDraggable>
-                    {(this.state.editing) ? this.renderForm() : this.renderDisplay()}
-                </ReactDraggable>
-            )
-        }
-    })
-
-    var Board = React.createClass({
-        propTypes: {
-            count: function (props, propName) {
-                if (typeof props[propName] !== "number") {
-                    return new Error('the count must be a number')
-                }
-                if (props[propName] > 100) {
-                    return new Error('Creating ' + props[propName] + ' notes is ridiculous')
-                }
-            }
-        },
-        getInitialState() {
-            return {
-                notes: []
-            }
-            this.setState({notes})
-        },
-        componentWillMount() {
-            if (this.props.count) {
-                var url = `https://baconipsum.com/api/?type=all-meat&sentences=${this.props.count}` // back tick below ~ on keyboard (must be used)
-                fetch(url)
-                .then(results => results.json())
-                .then(array => array[0])
-                .then(text => text.split('. '))
-                .then(array => array.forEach(
-                    sentence => this.add(sentence)))
-                .catch(function (err) {
-                    console.log("Didn't connect to the API", err)
-                })
-            }
-        },
-        remove(id) {
-            var notes = this.state.notes.filter(note => note.id !== id)
-            this.setState({notes})
-        },
-        nextId() {
-            this.uniqueId = this.uniqueId || 0
-            return this.uniqueId++
-        },
-        add(text) {
-            var notes = [
-                ...this.state.notes,
-                {
-                    id: this.nextId(),
-                    note: text
-                }
-            ]
-            this.setState({notes})
-        },
-        update(newText, id) {
-            var notes = this.state.notes.map(
-                note => (note.id !== id) ?
-                        note :
-                    {
-                        ...note,
-                        note: newText
-                    }
-            )
-            this.setState({notes})
-        },
-        eachNote(note) {
-            return (<Note key={note.id}
-                          id={note.id}
-                          onChange={this.update}
-                          onRemove={this.remove}>
-                {note.note}
-            </Note>)
-        },
-        render() {
-            return (
-                <div className="board">
-                    {this.state.notes.map(this.eachNote)}
-                    <button onClick={() => this.add('New Note')}>+</button>
-                </div>
-            )
-        }
-    })
-    ReactDOM.render(<Board count={10}/>,
-        document.getElementById("react-container"))
-</script>
-</body>
-    <script>
- (function main() {
-    'use strict';
-    $('#lynda-link').mouseover(function () {
-        this.style.color = 'yellow';
-    });
-
-    $('#lynda-link').mouseout(function () {
-        this.style.color = '#30096A';
-    });
-
-    $('#lynda-link').click(function () {
-        window.open('https://www.lynda.com/React-js-tutorials/Learn-React-js-Basics/519668-2.html');
-    });
-})();
 
 </script>
