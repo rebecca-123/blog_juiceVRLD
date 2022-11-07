@@ -97,237 +97,423 @@ window.onload = wrap_img;
     <style>
  
 
-.wrapper {
-  padding: 30px;
-}
+$lightgray: #ebeff1
+$gray: #cdd7dc
+$darkgray: #89989c
+$green: #5fbc71
+$blue: #4ab2d9
+$red: #f26f54
 
-.box {
-  border: 25px solid grey;
-  width: 78%;
-  background: #e8ca95;
-  -webkit-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
-  -moz-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
-  box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
+$padding: 15px
+$border-radius: 2px
+$box-shadow: 0 2px 1px rgba(0, 0, 0, 0.15)
+  
+*
+  box-sizing: border-box
 
-   
-}
+html
+  color: #4d4d4d
+  background-color: $lightgray
+  font-family: "Signika"
+  font-size: 16px
+  font-weight: 300
+  text-rendering: optimizeLegibility 
+  -webkit-font-smoothing: antialiased
+    
+h1
+  font-size: 26px
+  font-weight: 700
+  
+h2
+  font-size: 18px
+  font-weight: 400
+  
+h3
+  font-size: 18px
+  font-weight: 700
+  
+h4
+  font-size: 12px
+  font-weight: 400
+  color: $darkgray
+  
+ul
+  list-style: none
+  padding: 0
+  margin: 0
+  
+%avatar
+  position: absolute
+  top: 15px
+  left: 15px
+  height: 50px
+  width: 50px
+  background-color: $darkgray
+  border-radius: 50%
+  
+%button
+  position: relative
+  display: inline-block
+  width: initial
+  height: 35px
+  padding: 0 10px
+  margin-left: 15px
+  background-color: white
+  color: #4ab2d9
+  line-height: 35px
+  font-weight: 400
+  text-align: center
+  border-radius: $border-radius
+  cursor: pointer
+  border: 1px solid #4ab2d9
+  -webkit-transition: all 0.1s
+  -o-transition: all 0.1s
+  transition: all 0.1s
+  &:hover
+    background-color: $blue
+    color: #FFF
+    
+%panel
+  position: relative
+  padding: $padding
+  background-color: #FFF
+  border-radius: $border-radius
+  box-shadow: $box-shadow
+  
+.panel
+  @extend %panel
+  
+.container
+  width: 90%
+  max-width: 900px
+  margin: 50px auto 100px
+  
+.response-group
+  position: relative
+  width: 100%
+  padding: 100px $padding $padding
+  background-color: #fff
+  border-radius: $border-radius
+  box-shadow: $box-shadow
+  > header
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    padding: 5px $padding
+    background-color: transparentize(#FFF,0.25)
+    border-radius: $border-radius
+    box-shadow: $box-shadow
+    z-index: 100
+    i
+      margin: 0 10px 0 20px
+    .header-dropdown-trigger
+      border: 1px solid transparent
+      padding: 10px
+      border-radius: $border-radius
+      cursor: pointer
+      &:after
+        content: "\f078"
+        font-family: "FontAwesome"
+        font-size: 0.5em
+        line-height: 2.5
+        vertical-align: top
+        margin-left: 5px
+      &:hover, &.active
+        border: 1px solid $gray
+  > .header-dropdown
+    display: none
+    position: relative
+    top: -38px
+    left: -16px
+    width: calc(100% + 32px)
+    padding: $padding 1px
+    background: $lightgray
+    &.expand
+      display: block
+    ul
+      margin: -$padding
+      //padding: 10px 0
+    li
+      padding: 1em $padding
+      cursor: pointer
+      border-bottom: 1px solid $lightgray
+      h2
+        display: inline-block
+        margin: 0
+      &:hover h2
+        font-weight: 700
+      span
+        float: right
+        margin-left: 15px
+        line-height: 1.25
+    .progress
+      float: right
+      width: 50%
+      margin: 0.25em 0
+      
+.progress
+  position: relative
+  width: 100%
+  height: 0.75em
+  border-radius: 2px
+  background-color: $lightgray
+  box-shadow: 0 1px 1px rgba(0,0,0,0.1) inset
+    
+.progress__complete
+  position: absolute
+  top: 0
+  width: 50%
+  height: 0.75em
+  background-color: $green
+  border-radius: 2px
+  box-shadow: $box-shadow
 
-.an-wrap {
-  background: #8a3333;
-  padding: 18px;
-  color: white;
-  -o-transform: rotate(-3deg);
-  -webkit-transform: rotate(-3deg);
-  -moz-transform: rotate(-3deg);
-}
+.response
+  position: relative
 
-.em-wrap {
-  padding: 18px;
-  background: bisque;
-  font-size: 12px;
-  -o-transform: rotate(3deg);
-  -webkit-transform: rotate(3deg);
-  -moz-transform: rotate(3deg);
-}
+.response__number
+  position: absolute
+  width: 2rem
+  height: 2rem
+  line-height: 1.8rem
+  font-size: 1.2em
+  font-weight: 700
+  text-align: center
+  color: $darkgray
+  border: 2px solid $gray
+  border-radius: 50%
+  
+.response__title
+  margin-left: 3.25rem
+  margin-bottom: 50px  
+    
+.post-group
+  margin-left: 3.5rem
+  
+.post
+  position: relative
+  padding: $padding $padding 0 80px
+  margin-bottom: 50px
+  border: 1px solid $lightgray
+  border-bottom: none
+  box-shadow: $box-shadow
+  
+.post__avatar
+  @extend %avatar
+  
+.post__author
+  margin-top: 5px
+  margin-bottom: 5px 
+  
+.post__timestamp
+  margin-top: 0
 
-.memo-wrap {
-  padding: 18px;
-  background: aliceblue;
-  font-size: 12px;
-  -o-transform: rotate(5deg);
-  -webkit-transform: rotate(5deg);
-  -moz-transform: rotate(5deg);
-}
+.post__actions
+  height: 40px
+  width: calc(100% + 95px)
+  margin-left: -80px
+  background-color: $lightgray
+  border-top: 1px solid $lightgray
+  .button
+    float: left
+    height: 40px
+    width: 40px
+    line-height: 40px
+    text-align: center
+    vertical-align: top
+    border-right: 1px solid $gray
+    i.solid
+      display: none
+    &:not(.comment):active i
+      transform: scale(1.2)
+    &:not(.comment-trigger):hover, &:not(.comment-trigger).active
+      background-color: #FFF
+      cursor: pointer
+      i.solid
+        display: inline-block
+      i:not(.solid)
+        display: none
+      &.button--approve
+        color: $green
+      &.button--deny
+        color: $red
+  .button--flag
+    width: 60px
+    border-right: none
+    font-weight: 400
+    i
+      margin-right: 5px
+  .button--fill
+    width: calc(100% - 140px)
+    padding: 0 10px
+    text-align: left
+    font-size: 16px
+    font-weight: 400
+    color: $darkgray
+    
+.post__comments
+  display: none
+  padding: 15px
 
-.title-an {
-  padding-bottom: 1px;
-}
+.comment-group
+  padding-bottom: $padding
+  .post
+    padding: $padding $padding 0 65px
+    margin-bottom: 15px
+    box-shadow: none
+  .post__avatar
+    height: 35px
+    width: 35px
 
-.date-an {
-  font-size: 11px;
-  padding-bottom: 5px;
-}
+.comment-form
+  @extend %panel
+  height: 100%
+  padding: $padding $padding $padding 65px 
+  textarea
+    width: 100%
+    height: 4em
+    margin-bottom: 10px
+    font-size: 16px
+    border: 1px solid $gray
+    border-radius: $border-radius
+    box-shadow: 0 1px 1px $lightgray inset
+    &:focus
+      outline: none
 
-.cont-an {
-  font-size: 12px;
-}
+.comment-form__avatar
+  @extend %avatar
+  height: 35px
+  width: 35px
 
- 
+.comment-form .comment-form__actions
+  text-align: right
+  .button
+    @extend %button
+    float: none
+  .button--confirm
+    border-color: $green
+    color: $green
+    &:hover
+      background-color: $green
+      color: #FFF
+  .button--light
+    border-color: transparent
+    color: $darkgray
+    &:hover
+      background-color: $darkgray
+      color: #FFF
 
-.news-wrap {
-  font-size: 12px;
-  background: #ffff;
-  padding: 23px;
-}
-
-.news-title {
-  font-size: 18px;
-  padding-bottom: 7px;
-}
-
-.news-sub-title {
-  font-size: 11px;
-  font-style: italic;
-}
-
-.marker-icon {
-  width: 16px;
-  height: 20px;
-  position: absolute;
-  top: 0px;
-  left: 26px;
-}
-
-.title-em {
-  font-size: 18px;
-}
-
-.from-em {
-  margin-top: 3px;
-}
-
-.date-em {
-  margin-bottom: 3px;
-}
-
-
-.an-wrap:hover,
-.news-wrap:hover,
-.memo-wrap:hover,
-.em-wrap:hover {
-  -webkit-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
-  -moz-box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
-  box-shadow: 10px 10px 5px -4px rgba(176, 176, 176, 1);
-
-  cursor: pointer;
-
-  transform: scale(1.1);
-  -webkit-transition: transform 0.2s ease-in-out;
-  -moz-transition: transform 0.2s ease-in-out;
-  -ms-transition: transform 0.2s ease-in-out;
-}
-
-.an-wrap:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: -1px;
-  border-width: 0 16px 16px 0;
-  border-style: solid;
-  border-color: #fcf5e7 #e8ca95 #ffffff #e8ca95;
-  background: #e8ca95;
-  display: block;
-  width: 0;
-  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3),
-    -1px 1px 1px rgba(0, 0, 0, 0.2);
-  -moz-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3), -1px 1px 1px rgba(0, 0, 0, 0.2);
-}
-
-@media only screen and (max-width: 768px) {
-  .box {
-    width: 100%;
-  }
+.post--commenting
+  .post__actions
+    height: initial
+  .button.comment-trigger span
+    display: none
+  .post__comments
+    display: block
+    margin-top: 40px
+    border-top: 1px solid $gray
 
 
 
 </style>
 
 <html>
-<div class="wrapper">
-  <div class="container-fluid box px-md-3 py-3">
-    <div class="row">
-      <div class="col-md-3 ">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="an-wrap" id="a1">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-an">Announcement Title</div>
-              <div class="date-an">23-08-2019</div>
-              <div class="cont-an"><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="an-img" />In the first paragraph, want to deliver your most critical information upfront, and then use subsequent paragraphs as opportunities to dive into more
-                detail</div>
-            </div>
-          </div>
-          <div class="col-md-12 mt-3">
-            <div class="memo-wrap" id="m1">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-em">Memo1</div>
-              <div class="from-em">From :xxxxy@gmail.com</div>
-              <div class="date-em">Date : 23-08-2019</div>
-              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase, A memo is </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3 ">
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <div class="news-wrap" id="n1">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="news-title">Title1</div>
-              <p class="news-sub-title">Sub Title1</p><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="new-img" /> In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase,
-              . A memo is meant
-            </div>
-          </div>
-          <div class="col-md-12 mb-3">
-            <div class="em-wrap" id="e1">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-em">Leave Approval</div>
-              <div class="from-em">From : deepak@gmail.com</div>
-              <div class="date-em">Date : 23-08-2019</div>
-              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo more detail. new</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <div class="memo-wrap" id="m2">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-em">Memo1</div>
-              <div class="from-em">From : deepak@gmail.com</div>
-              <div class="date-em">Date : 23-08-2019</div>
-              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase, A memo is </div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-3">
-            <div class="news-wrap" id="n2">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="news-title">Title1</div>
-              <p class="news-sub-title">Sub Title1</p><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="new-img" /> In the first paragraph, you'll want to quickly and clearly state the purpose of your memo. You might begin your sentence with the phrase,
-              . A memo is meant
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-3">
-        <div class="row">
-          <div class="col-md-12 mb-3">
-            <div class="an-wrap" id="a2">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-an">Announcement Title</div>
-              <div class="date-an">23-08-2019</div>
-              <div class="cont-an"><img src="https://homepages.cae.wisc.edu/~ece533/images/arctichare.png" class="an-img" />In the first paragraph, want to deliver your most critical information upfront, and then use subsequent paragraphs as opportunities to dive into more
-                detail</div>
-            </div>
-          </div>
-          <div class="col-md-12 mb-3">
-            <div class="em-wrap" id="e2">
-              <img src="https://image.flaticon.com/icons/svg/230/230336.svg" class="marker-icon" />
-              <div class="title-em">Leave Approval</div>
-              <div class="from-em">From : deepak@gmail.com</div>
-              <div class="date-em">Date : 23-08-2019</div>
-              <div class="cont-em">In the first paragraph, you'll want to quickly and clearly state the purpose of your memo more detail. new</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+.container
+  .response-group
+    header
+      h2 
+        strong Topic 
+        i.fa.fa-angle-right
+        span.header-dropdown-trigger Discussion 
+    .header-dropdown
+      .panel
+        ul
+          - 4.times do
+            li 
+              h2 Activity Title
+              span 2/4
+              .progress
+                .progress__complete
+              
+    .response
+      .response__number 1
+      h1.response__title Coffee emporium avondale humid german rivertown vine street findlay market historic architecture?
+      .post-group
+        -3.times do
+          .post
+            .post__avatar
+            h3.post__author Lester McTester
+            h4.post__timestamp Oct 13 at 8:51pm 
+            p.post__body Hamilton county river front museum center washington park breweries walnut hills findlay market christian moerlein flying pig ohio valley jazz festival union terminal fifty west coffee emporium chili.
+            .post__actions
+              .button.button--approve
+                i.fa.fa-thumbs-o-up
+                i.fa.fa-thumbs-up.solid
+              .button.button--deny
+                i.fa.fa-thumbs-o-down
+                i.fa.fa-thumbs-down.solid
+              .button.button--fill.comment-trigger
+                span Comment...
+              .button.button--flag
+                i.fa.fa-comment-o
+                i.fa.fa-comment.solid
+                | 2
+              .post__comments
+                .comment-group
+                  - 2.times do
+                    .post
+                      .post__avatar.comment__avatar
+                      h3.post__author Lester McTester
+                      h4.post__timestamp Oct 13 at 8:51pm 
+                      p.post__body Hamilton county river front museum center washington park breweries walnut hills findlay market christian moerlein flying pig ohio valley jazz festival union terminal fifty west coffee emporium chili.
+                .comment-form
+                  .comment-form__avatar
+                  textarea
+                  .comment-form__actions
+                    .button.button--light.cancel Cancel
+                    .button.button--confirm Comment
+ </html>
 
-</html>
+<script>
+ $( ".header-dropdown-trigger" ).click(function() {
+  $( this ).toggleClass( "active" );
+  $( ".header-dropdown" ).toggleClass( "expand" );
+});
+
+$( ".header-dropdown li" ).click(function() {
+  $( ".header-dropdown-trigger" ).removeClass( "active" );
+  $( ".header-dropdown" ).removeClass( "expand" );
+});
+
+$( ".button--approve" ).click(function() {
+  $( this ).toggleClass( "active" );
+  $( this ).siblings( '.button--deny' ).removeClass( "active" );
+});
+
+$( ".button--deny" ).click(function() {
+  $( this ).toggleClass( "active" );
+  $( this ).siblings( '.button--approve' ).removeClass( "active" );
+});
+
+$( ".comment-trigger" ).click(function() {
+  $( this ).parent().parent().toggleClass( "post--commenting" );
+});
+
+$( ".button--flag" ).click(function() {
+  $( this ).parent().parent().toggleClass( "post--commenting" );
+});
+
+
+$( ".button--confirm" ).click(function() {
+  $( this ).parent().parent().parent().parent().parent().toggleClass( "post--commenting" );
+});
+
+$( ".button.cancel" ).click(function() {
+  $( this ).parent().parent().parent().parent().parent().toggleClass( "post--commenting" );
+}); 
+ </script>
+
 
   </div><a class="u-url" href="/blog_juiceVRLD/pbl/reviews" hidden></a>
 </article>
