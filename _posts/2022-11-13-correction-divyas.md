@@ -3,7 +3,7 @@ toc: false
 description: 
 categories: [pbl]
 title: Corrections 
-permalink: pbl/corrections
+permalink: pbl/correction-divyas
 ---
 
 {
@@ -23,7 +23,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![Score](../images/2014MCQ.png)"
    ]
   },
   {
@@ -37,7 +36,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q11](../images/q11.png)"
    ]
   },
   {
@@ -64,7 +62,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q15](../images/q15.png)"
    ]
   },
   {
@@ -89,7 +86,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q17](../images/q17.png)"
    ]
   },
   {
@@ -139,14 +135,12 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q22](../images/q22.png)"
    ]
   },
   {
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q22-](../images/q22-.png)"
    ]
   },
   {
@@ -171,7 +165,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q23](../images/q23.png)"
    ]
   },
   {
@@ -226,7 +219,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q28](../images/q28.png)"
    ]
   },
   {
@@ -251,7 +243,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q29](../images/q29.png)"
    ]
   },
   {
@@ -277,7 +268,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q33](../images/q33.png)"
    ]
   },
   {
@@ -302,7 +292,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q38](../images/q38.png)"
    ]
   },
   {
@@ -327,7 +316,6 @@ permalink: pbl/corrections
    "cell_type": "markdown",
    "metadata": {},
    "source": [
-    "![q39](../images/q39.png)"
    ]
   },
   {
