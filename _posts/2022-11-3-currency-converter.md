@@ -156,7 +156,6 @@ form button:hover{
       </form>
     </div>
 
-
 <script>
     const dropList = document.querySelectorAll("form select"),
 fromCurrency = document.querySelector(".from select"),
